@@ -9,6 +9,19 @@
 body {
   overflow: auto;
   overflow-x: hidden;
+  height: 1000px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.navigation-row {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
 }
 
 .navigation-row .navigation-col {
