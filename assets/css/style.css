@@ -997,6 +997,13 @@ html {
   border-top: 1px dashed white;
 }
 
+#parallax-counter .parallax-container .parallax-row .parallax-item:hover {
+  -webkit-transform: translateY(-3%);
+          transform: translateY(-3%);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
 #parallax-counter .parallax-container .parallax-row .info {
   margin-top: 20px;
   font-size: 26px;
