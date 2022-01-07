@@ -1,0 +1,28 @@
+@mixin  introButton {
+    border-radius: 5px;
+    padding: 10px 15px;
+    background-color: $base-color;
+    width: 140px;
+    height: 40px;
+    color: $white-color;
+    text-decoration: none;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    letter-spacing: 0.4px;
+}
+
+@mixin  introMixinForContent {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 115;
+    color: $white-color;
+    font-size: 20px;
+}
