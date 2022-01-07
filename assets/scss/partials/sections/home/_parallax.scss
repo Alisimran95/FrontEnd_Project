@@ -1,0 +1,104 @@
+#parallax-counter {
+    background-image: url(/assets/images/parallax.jpeg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 50vh;
+    position: relative;
+    margin-top: 100px;
+    min-width: 100%;
+
+    &::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 50vh;
+        background-color: $base-color;
+        z-index: 10;
+        opacity: 0.8;
+    }
+
+    .parallax-container {
+        display: flex;
+        justify-content: center;
+
+        .parallax-row {
+            width: 1140px;
+            height: 300px;
+            justify-content: center;
+            align-items: center;
+
+            .parallax-item {
+                height: 280px;
+                position: relative;
+                z-index: 111;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                text-align: center;
+
+
+                .counter {
+
+                    font-size: 40px;
+                    color: $white-color;
+                    font-weight: 400;
+                    position: relative;
+
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        width: 120px !important;
+                        left:-38px;
+                        top: 70px;
+                        z-index: 100;
+                        height: 2px;
+                        border-top: 1px dashed $white-color;
+                       
+                    }
+                }
+            }
+
+            .info {
+                margin-top: 20px;
+                font-size: 26px;
+                color: $white-color;
+                font-weight: 400;
+               
+            }
+        }
+    }
+}
+
+
+// Responsibility
+
+@media screen and (max-width:992px) {
+    #parallax-counter{
+        min-width: 100% !important;
+        margin-top: 500px;
+        min-height: 100% !important;
+        .parallax-row{
+            min-height: 100% !important;
+            min-width:100% !important;
+            .parallax-item {
+                height: 100% !important;
+                flex-direction: column;
+            }
+        }
+    }
+}
+@media screen and (max-width:770px) {
+    #parallax-counter{
+        min-width: 100% !important;
+        margin-top: 600px !important;
+        min-height: 100vh !important;
+        overflow: hidden;
+
+        &::before {
+            width: 100%;
+            height: 100vh !important;
+        }
+    }
+}
