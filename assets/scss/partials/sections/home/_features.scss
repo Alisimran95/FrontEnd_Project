@@ -1,0 +1,77 @@
+.features-row{
+    width: 1140px;
+    height: 289px;
+    margin-top: 100px;
+    .features-card{
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        height: 260px;
+        text-align: center; 
+        border: none;
+        outline: none;
+        border-radius: 5px;
+        background: $white-color;
+        // box-shadow: 0 2px 48px 0 rgb(227, 227, 227 / 1%);
+        box-shadow: 0 2px 48px 0 rgb(227 227 227);
+        cursor: pointer;
+
+        .heading{
+            font-weight: 400;
+            font-size: 16px;
+            color: #3B566E;
+        }
+        .card-text{
+            font-size: 14px;
+            font-weight: 400;
+            color: $nav-link-color;
+        }
+
+        .icon{
+            margin-top: 20px;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 30px;
+            cursor: pointer;
+            i{
+                position: absolute;
+                color: $base-color;
+                border: 0px solid $base-color;
+                background-color: #F7FAFD;
+                border-radius: 50%;
+                height: 50px;
+                width: 50px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                z-index: 99;
+            }
+        }
+        &:hover {
+            background-color: $base-color;
+            box-shadow: 0;
+        }
+        &:hover .heading {
+            color: $white-color;
+        }
+        &:hover .card-text {
+            color: $white-color;
+        }
+    }
+   
+}
+
+// Responsibilty
+
+@media screen and(max-width:992px) {
+    .features-row{
+        padding: 0;
+        margin:0;
+        margin-top: 600px;
+        .features-card{
+            margin:10px 10px;
+        }
+    }
+}

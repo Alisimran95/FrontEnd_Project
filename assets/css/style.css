@@ -446,3 +446,93 @@ html {
     padding: 0;
   }
 }
+
+.features-row {
+  width: 1140px;
+  height: 289px;
+  margin-top: 100px;
+}
+
+.features-row .features-card {
+  padding: 0;
+  margin: 0;
+  width: 120%;
+  height: 260px;
+  text-align: center;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  background: white;
+  -webkit-box-shadow: 0 2px 48px 0 #e3e3e3;
+          box-shadow: 0 2px 48px 0 #e3e3e3;
+  cursor: pointer;
+}
+
+.features-row .features-card .heading {
+  font-weight: 400;
+  font-size: 16px;
+  color: #3B566E;
+}
+
+.features-row .features-card .card-text {
+  font-size: 14px;
+  font-weight: 400;
+  color: #6F8BA4;
+}
+
+.features-row .features-card .icon {
+  margin-top: 20px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+
+.features-row .features-card .icon i {
+  position: absolute;
+  color: #585CE9;
+  border: 0px solid #585CE9;
+  background-color: #F7FAFD;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  z-index: 99;
+}
+
+.features-row .features-card:hover {
+  background-color: #585CE9;
+}
+
+.features-row .features-card:hover .heading {
+  color: white;
+}
+
+.features-row .features-card:hover .card-text {
+  color: white;
+}
+
+@media screen and (max-width: 992px) {
+  .features-row {
+    padding: 0;
+    margin: 0;
+    margin-top: 600px;
+  }
+  .features-row .features-card {
+    margin: 10px 10px;
+  }
+}
