@@ -1,4 +1,4 @@
-@mixin  introButton {
+@mixin introButton {
     border-radius: 5px;
     padding: 10px 15px;
     background-color: $base-color;
@@ -13,7 +13,7 @@
     letter-spacing: 0.4px;
 }
 
-@mixin  introMixinForContent {
+@mixin introMixinForContent {
     position: absolute;
     height: 100%;
     width: 100%;
@@ -25,4 +25,30 @@
     z-index: 115;
     color: $white-color;
     font-size: 20px;
+}
+
+@mixin serviceDisplayFlexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+@mixin  serviceButton {
+    text-decoration: none;
+    width: 100%;
+    display: inline-block;
+    height: 40px;
+    background: $white-color;
+    box-shadow: 0 2px 48px 0 rgb(227, 227, 227 / 1%);
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 14px;
+    outline: none;
+    cursor: pointer;
+    line-height: 40px;
+    position: relative;
+    overflow: hidden;
+    margin: auto;
 }

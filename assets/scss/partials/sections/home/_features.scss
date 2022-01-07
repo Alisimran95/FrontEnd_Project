@@ -5,15 +5,15 @@
     .features-card{
         padding: 0;
         margin: 0;
-        width: 100%;
+        width: 85%;
         height: 260px;
         text-align: center; 
         border: none;
         outline: none;
         border-radius: 5px;
         background: $white-color;
-        // box-shadow: 0 2px 48px 0 rgb(227, 227, 227 / 1%);
-        box-shadow: 0 2px 48px 0 rgb(227 227 227);
+        box-shadow: 0 2px 48px 0 rgb(227, 227, 227 / 1%);
+        // box-shadow: 0 2px 48px 0 rgb(227 227 227);
         cursor: pointer;
 
         .heading{
