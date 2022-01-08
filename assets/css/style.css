@@ -1574,10 +1574,19 @@ footer .container-footer h5 {
 footer .container-footer ul.navigation li a {
   font-size: 14px;
   font-weight: 300;
+  color: white;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
 }
 
 footer .container-footer ul.navigation li a span {
-  margin-left: 5px;
+  margin-left: 8px;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+footer .container-footer ul.navigation li a:hover span {
+  margin-left: 13px;
 }
 
 footer .container-footer .contact {
