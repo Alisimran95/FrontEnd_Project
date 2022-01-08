@@ -1631,3 +1631,305 @@ footer .container-footer .copyright {
     margin-bottom: 10px;
   }
 }
+
+#contact {
+  background-image: url(/assets/images/parallax-cover-contact.jpeg);
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  top: 0;
+  left: 0;
+  width: 100%;
+  margin-top: 80px !important;
+  min-height: 40vh;
+  position: relative;
+}
+
+#contact::before {
+  content: "";
+  top: 0;
+  left: 0;
+  background-color: #585CE9;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  opacity: 0.8;
+}
+
+#contact .container-contact {
+  width: 1140px;
+}
+
+#contact .container-contact .content {
+  margin-top: 150px;
+  z-index: 11;
+}
+
+#contact .container-contact .content h1 {
+  color: white;
+  font-weight: 400;
+  font-size: 34px;
+  height: 50px;
+  line-height: 40px;
+  letter-spacing: 1px;
+  text-align: center;
+  position: relative;
+}
+
+#contact .container-contact .content h1::after {
+  position: absolute;
+  content: "";
+  width: 15px;
+  height: 2px;
+  z-index: 11;
+  left: 49.5%;
+  bottom: 0;
+  background-color: white;
+}
+
+#contact .container-contact .content ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#contact .container-contact .content ul li {
+  margin-bottom: 50px;
+  display: inline-block;
+  margin-left: 10px;
+}
+
+#contact .container-contact .content ul li a {
+  text-decoration: none;
+  color: #E5E9F7;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+#contact .container-contact .content ul li a i {
+  margin-left: 5px;
+}
+
+@media screen and (max-width: 576px) {
+  #contact {
+    min-width: 100% !important;
+    margin-top: 80px !important;
+    min-height: 40vh !important;
+  }
+  #contact::before {
+    width: 100% !important;
+    height: 100% !important;
+  }
+  #contact .container-contact {
+    width: 100% !important;
+  }
+}
+
+#area {
+  min-width: 100% !important;
+}
+
+#area .container-area {
+  margin-top: 50px;
+  width: 1140px;
+}
+
+#area .container-area iframe {
+  width: 100%;
+}
+
+#area .container-area .contact-info {
+  background-color: #585CE9;
+  min-height: 180px !important;
+  max-height: 600px !important;
+  margin-left: 50px;
+  margin-right: 50px;
+  border-radius: 5px;
+  margin-top: -80px;
+  z-index: 12;
+  position: relative;
+}
+
+#area .container-area .contact-info .contact-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 30px;
+  margin-left: 40px;
+}
+
+#area .container-area .contact-info .contact-body .contact-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#area .container-area .contact-info .contact-body .contact-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#area .container-area .contact-info .contact-body .contact-item i {
+  margin-right: 8px;
+  margin-top: 5px;
+  color: white;
+  font-size: 16px;
+}
+
+#area .container-area .contact-info .contact-body .contact-item span {
+  color: white;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+#area .container-area .contact-info .social-icons {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  margin-top: 50px;
+}
+
+#area .container-area .contact-info .social-icons li {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
+
+#area .container-area .contact-info .social-icons li i {
+  font-size: 22px;
+  color: white;
+  margin-left: 5px;
+  z-index: 11;
+}
+
+@media screen and (max-width: 992px) {
+  .contact-info {
+    margin: 0 !important;
+    min-height: 100% !important;
+    min-width: 100% !important;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  #area {
+    min-width: 100% !important;
+  }
+  #area .container-area {
+    margin-top: 60px;
+    width: 100% !important;
+  }
+  #area .container-area iframe {
+    width: 100% !important;
+  }
+  #area .container-area .contact-info {
+    height: 100% !important;
+    margin: 0 !important;
+  }
+  #area .container-area .contact-info .contact-body {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #area .container-area .contact-info .contact-body .contact-group {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #area .container-area .social-icons {
+    margin: 0px !important;
+    margin-bottom: 10px !important;
+    margin-top: 10px !important;
+  }
+}
+
+#form {
+  width: 100% !important;
+  padding: 80px 0 80px 0;
+}
+
+#form .container-form {
+  width: 1140px;
+}
+
+#form .container-form h5 {
+  font-size: 22px;
+  color: #3B566E;
+  font-weight: 400;
+}
+
+#form .container-form .text {
+  font-weight: 400;
+  font-size: 14px;
+  color: #6f8ba4;
+  line-height: 26px;
+}
+
+#form .container-form .contact-form input {
+  width: 100%;
+  height: 50px;
+  margin-bottom: 20px;
+}
+
+#form .container-form .contact-form textarea {
+  width: 100%;
+  height: 130px;
+  margin-top: 20px;
+}
+
+#form .container-form .contact-form .contact-btn {
+  width: 160px;
+  height: 40px;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #585CE9;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  margin-top: 50px;
+  margin-left: 50px;
+  margin-bottom: 50px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+#form .container-form .contact-form .contact-btn a {
+  color: white;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.7px;
+}
+
+#form .container-form .contact-form .contact-btn:hover {
+  background-color: #4146e6;
+}
+
+@media screen and (max-width: 576px) {
+  #form {
+    min-width: 100% !important;
+  }
+  #form .container-form {
+    width: 100% !important;
+  }
+}
