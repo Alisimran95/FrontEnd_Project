@@ -1,547 +1,508 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./assets/css/style.css" />
-    <script defer src="./js/index.js"></script>
-    <title>Jirono</title>
-  </head>
-  <body>
-    <!-- Header Section Start -->
-    <header>
-      <div class="container d-flex justify-content-center">
-        <div
-          class="row navigation-row d-flex justify-content-center align-items-center"
-        >
-          <div class="col-lg-12 col-md-12  navigation-col d-flex justify-content-between">
-            <div class="col-lg-1 col-md-1 logo">
-              <a href="#"
-                ><img src="./assets/images/logo-blue.png" alt="site-logo"
-              /></a>
-            </div>
-            <div class="col-lg-6 col-md-6 d-flex justify-content-center">
-              <ul class="nav-links d-flex">
-                <li><a href="#">Home</a></li>
-                <li class="accordion-click">
-                  <a href="#"
-                    >Discover
-                    <i class="fas fa-angle-down"></i>
-                  </a>
-                  <ul class="dropdown">
-                    <li><a href="#">Features</a></li>
-                    <li><a href="#">Our Team</a></li>
-                    <li><a href="#">Pricing Plans</a></li>
-                    <li><a href="#">Latest Blogs</a></li>
-                  </ul>
-                </li>
-                <li class="accordion-click">
-                  <a href="#"
-                    >Pages
-                    <i class="fas fa-angle-down"></i>
-                  </a>
-                  <ul class="dropdown">
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Features</a></li>
-                    <li><a href="#">FAQ's</a></li>
-                    <li><a href="#">Blog</a></li>
-                  </ul>
-                </li>
-                <li><a href="#">Contact</a></li>
-              </ul>
-            </div>
-            <div class="col-lg-1 col-md-1 menu-icon">
-              <i class="fas fa-bars"></i>
-            </div>
-            <div class="col-lg-4 col-md-4 d-flex justify-content-end">
-              <ul class="buttons">
-                <li><a href="#">Sign In</a></li>
-                <li><a href="#">Sign Up</a></li>
-              </ul>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <script defer src="./js/index.js"></script>
+  <title>Jirono</title>
+</head>
+
+<body>
+  <!-- Header Section Start -->
+  <header>
+    <div class="container d-flex justify-content-center">
+      <div class="row navigation-row d-flex justify-content-center align-items-center">
+        <div class="col-lg-12 col-md-12  navigation-col d-flex justify-content-between">
+          <div class="col-lg-1 col-md-1 logo">
+            <a href="#"><img src="./assets/images/logo-blue.png" alt="site-logo" /></a>
+          </div>
+          <div class="col-lg-6 col-md-6 d-flex justify-content-center">
+            <ul class="nav-links d-flex">
+              <li><a href="#">Home</a></li>
+              <li class="accordion-click">
+                <a href="#">Discover
+                  <i class="fas fa-angle-down"></i>
+                </a>
+                <ul class="dropdown">
+                  <li><a href="#">Features</a></li>
+                  <li><a href="#">Our Team</a></li>
+                  <li><a href="#">Pricing Plans</a></li>
+                  <li><a href="#">Latest Blogs</a></li>
+                </ul>
+              </li>
+              <li class="accordion-click">
+                <a href="#">Pages
+                  <i class="fas fa-angle-down"></i>
+                </a>
+                <ul class="dropdown">
+                  <li><a href="#">About Us</a></li>
+                  <li><a href="#">Features</a></li>
+                  <li><a href="#">FAQ's</a></li>
+                  <li><a href="#">Blog</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-1 col-md-1 menu-icon">
+            <i class="fas fa-bars"></i>
+          </div>
+          <div class="col-lg-4 col-md-4 d-flex justify-content-end">
+            <ul class="buttons">
+              <li><a href="#">Sign In</a></li>
+              <li><a href="#">Sign Up</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- Header Section Ends -->
+
+  <main>
+    <!-- Intro Section Start -->
+    <section id="intro">
+      <div class="container-fluid d-flex justify-content-center">
+        <div class="row d-flex justify-content-center intro-row">
+          <div class="col-lg-6 d-flex flex-column justify-content-center intro-title">
+            <h1>
+              Industry Leading Managed Services and Staffing
+              <span>Solutions</span>
+            </h1>
+            <p>
+              Proven methods to capture business priorities and goals as well
+              as current pain points that enables measurable business
+              outcomes.
+            </p>
+            <a id="intro-btn" href="#">LEARN MORE</a>
+          </div>
+          <div class="col-lg-6 intro-content">
+            <div class="cards">
+              <div class="card image-1">
+                <img src="./assets/images/intro-image-1.jpeg" alt="card-image" />
+              </div>
+              <div class="card image-2">
+                <img src="./assets/images/intro-image-2.jpeg" alt="card-image" />
+              </div>
+              <div class="card image-3">
+                <img src="./assets/images/intro-image-3.jpeg" alt="card-image" />
+                <div class="video-icon">
+                  <i class="fa fa-play"></i>
+                </div>
+              </div>
+              <div class="card image-4">
+                <img src="./assets/images/intro-image-4.jpeg" alt="card-image" />
+                <div class="image-4-about">
+                  <span>Our goal:</span>
+                  <p>"We create technology for a sustainable future."</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </header>
-    <!-- Header Section Ends -->
+    </section>
+    <!-- Intro Section Ends -->
 
-    <main>
-      <!-- Intro Section Start -->
-      <section id="intro">
-        <div class="container-fluid d-flex justify-content-center">
-          <div class="row d-flex justify-content-center intro-row">
-            <div
-              class="col-lg-6 d-flex flex-column justify-content-center intro-title"
-            >
-              <h1>
-                Industry Leading Managed Services and Staffing
-                <span>Solutions</span>
-              </h1>
+    <!-- Section Features Start -->
+    <section id="features">
+      <div class="container d-flex justify-content-center">
+        <div class="row d-flex flex-wrap features-row">
+          <div class="col-lg-12 d-flex flex-wrap text-center justify-content-between align-items-center features-col">
+            <div class="col-12 col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center">
+              <div class="card features-card">
+                <div class="card-body">
+                  <div class="icon">
+                    <i class="fa fa-cloud"></i>
+                  </div>
+                  <h5 class="card-title heading pt-5">Cloud Solutions</h5>
+
+                  <p class="card-text">
+                    Morbilling pharetra sapiening ut mattis viverra. Curabitur
+                    magna.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center">
+              <div class="card features-card">
+                <div class="card-body">
+                  <div class="icon">
+                    <i class="fa fa-laptop"></i>
+                  </div>
+                  <h5 class="card-title heading pt-5">Network Services</h5>
+                  <p class="card-text">
+                    Donec pellentesque turpis utium lorem imperdiet semper
+                    viverra.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center">
+              <div class="card features-card">
+                <div class="card-body">
+                  <div class="icon">
+                    <i class="fa fa-video-camera"></i>
+                  </div>
+                  <h5 class="card-title heading pt-5">Webcast Services</h5>
+                  <p class="card-text">
+                    Facilisis arcu ligula, malesuada id tincidunt laoreet,
+                    facilisis at justo.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center">
+              <div class="card features-card">
+                <div class="card-body">
+                  <div class="icon">
+                    <i class="fa fa-server"></i>
+                  </div>
+                  <h5 class="card-title heading pt-5">Disaster Recovery</h5>
+                  <p class="card-text">
+                    Proin arcu ligula, malesuada id tincidunt laoreet,
+                    facilisis at justo.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Section Features Ends -->
+
+    <!-- Section Services Start -->
+    <section id="services">
+      <div class="container services-container">
+        <div class="row services-row">
+          <div class="col-lg-6 col-md-12 col-sm-12 services-heading aling-self-center">
+            <div class="title">
+              <h2>Cloud Services</h2>
+            </div>
+            <div class="content">
               <p>
-                Proven methods to capture business priorities and goals as well
-                as current pain points that enables measurable business
-                outcomes.
+                Phasellus vitae velit sit amet diam semper commodo quis quis
+                libero. Morbi consequat arcu augue, molestie faucibus metus
+                ullamcorper vel.
               </p>
-              <a id="intro-btn" href="#">LEARN MORE</a>
+              <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                  <a class="service-btn" href="#">
+                    <i class="fa fa-angle-right active"></i>
+                    <span>NearCloud</span>
+                  </a>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                  <a class="service-btn" href="#">
+                    <i class="fa fa-angle-right"></i>
+                    <span>Office Cloud</span>
+                  </a>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                  <a class="service-btn" href="#">
+                    <i class="fa fa-angle-right"></i>
+                    <span>Backup Systems</span>
+                  </a>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                  <a class="service-btn" href="#">
+                    <i class="fa fa-angle-right"></i>
+                    <span>Hybrid Cloud</span>
+                  </a>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                  <a class="service-btn" href="#">
+                    <i class="fa fa-angle-right"></i>
+                    <span>API Cloud</span>
+                  </a>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                  <a class="service-btn" href="#">
+                    <i class="fa fa-angle-right"></i>
+                    <span>SDK Cloud</span>
+                  </a>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                  <a class="service-btn" href="#">
+                    <i class="fa fa-angle-right"></i>
+                    <span>Web Services</span>
+                  </a>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                  <a class="service-btn" href="#">
+                    <i class="fa fa-angle-right"></i>
+                    <span>Cloud Hosting</span>
+                  </a>
+                </div>
+              </div>
             </div>
-            <div class="col-lg-6 intro-content">
-              <div class="cards">
-                <div class="card image-1">
-                  <img
-                    src="./assets/images/intro-image-1.jpeg"
-                    alt="card-image"
-                  />
+          </div>
+          <div class="col-lg-1 p-0 empty">
+
+          </div>
+
+          <div class="col-lg-5 col-md-12 col-sm-12 services-image">
+            <img class="img-fluid mx-auto d-block" src="./assets/images/blue-1.png" alt="Services photo" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Section Services Ends -->
+
+    <!-- Section Design-development  Starts-->
+    <section id="design-development">
+      <div class="container design-development-container">
+        <div class="row design-development-row">
+          <div class="col-lg-5 align-self-center design-image">
+            <img class="img-fluid mx-auto d-block" src="./assets/images/blue-2.png" alt="Development idea photo">
+          </div>
+          <div class="col-lg-1"></div>
+          <div class="col-lg-6 col-md-12 col-sm-12 design-heading aling-self-center">
+            <div class="title">
+              <h2>Design & Development</h2>
+            </div>
+            <div class="content">
+              <p>
+                Phasellus vitae velit sit amet diam semper commodo quis quis
+                libero. Morbi consequat arcu augue, molestie faucibus metus
+                ullamcorper vel.
+              </p>
+              <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                  <a class="design-btn" href="#">
+                    <i class="fa fa-angle-right active"></i>
+                    <span>Web Design</span>
+                  </a>
                 </div>
-                <div class="card image-2">
-                  <img
-                    src="./assets/images/intro-image-2.jpeg"
-                    alt="card-image"
-                  />
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                  <a class="design-btn" href="#">
+                    <i class="fa fa-angle-right"></i>
+                    <span>Mobile App Design</span>
+                  </a>
                 </div>
-                <div class="card image-3">
-                  <img
-                    src="./assets/images/intro-image-3.jpeg"
-                    alt="card-image"
-                  />
-                  <div class="video-icon">
-                    <i class="fa fa-play"></i>
-                  </div>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                  <a class="design-btn" href="#">
+                    <i class="fa fa-angle-right"></i>
+                    <span>Android Development</span>
+                  </a>
                 </div>
-                <div class="card image-4">
-                  <img
-                    src="./assets/images/intro-image-4.jpeg"
-                    alt="card-image"
-                  />
-                  <div class="image-4-about">
-                    <span>Our goal:</span>
-                    <p>"We create technology for a sustainable future."</p>
-                  </div>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                  <a class="design-btn" href="#">
+                    <i class="fa fa-angle-right"></i>
+                    <span>iOS Development</span>
+                  </a>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                  <a class="design-btn" href="#">
+                    <i class="fa fa-angle-right"></i>
+                    <span>Back-End</span>
+                  </a>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                  <a class="design-btn" href="#">
+                    <i class="fa fa-angle-right"></i>
+                    <span>Front-End</span>
+                  </a>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                  <a class="design-btn" href="#">
+                    <i class="fa fa-angle-right"></i>
+                    <span>e-Commerce</span>
+                  </a>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                  <a class="design-btn" href="#">
+                    <i class="fa fa-angle-right"></i>
+                    <span>Print Design</span>
+                  </a>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </section>
-      <!-- Intro Section Ends -->
+      </div>
+    </section>
+    <!-- Section Design-development Ends-->
 
-      <!-- Section Features Start -->
-      <section id="features">
-        <div class="container d-flex justify-content-center">
-          <div class="row d-flex flex-wrap features-row">
-            <div
-              class="col-lg-12 d-flex flex-wrap text-center justify-content-between align-items-center features-col"
-            >
-              <div
-                class="col-12 col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center"
-              >
-                <div class="card features-card">
-                  <div class="card-body">
-                    <div class="icon">
-                      <i class="fa fa-cloud"></i>
-                    </div>
-                    <h5 class="card-title heading pt-5">Cloud Solutions</h5>
+    <!-- Section Parallax-Counter Start -->
+    <section id="parallax-counter">
+      <div class="container parallax-container">
+        <div class="row parallax-row ">
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="parallax-item">
+              <span class="counter" data-count="96">
+                0
+              </span>
+              <span class="info">
+                Project
+                <br>
+                Complete
+              </span>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="parallax-item">
+              <span class="counter" data-count="190">
+                0
+              </span>
+              <span class="info">
+                Happy <br>
+                Customer
+              </span>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="parallax-item">
+              <span class="counter" data-count="12">
+                0
+              </span>
+              <span class="info">
+                Experienced <br>
+                Staff
+              </span>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="parallax-item">
+              <span class="counter" data-count="46">
+                0
+              </span>
+              <span class="info">
+                Ongoing <br>
+                Project
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Section Parallax-Counter Ends -->
 
-                    <p class="card-text">
-                      Morbilling pharetra sapiening ut mattis viverra. Curabitur
-                      magna.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div
-                class="col-12 col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center"
-              >
-                <div class="card features-card">
-                  <div class="card-body">
-                    <div class="icon">
-                      <i class="fa fa-laptop"></i>
-                    </div>
-                    <h5 class="card-title heading pt-5">Network Services</h5>
-                    <p class="card-text">
-                      Donec pellentesque turpis utium lorem imperdiet semper
-                      viverra.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div
-                class="col-12 col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center"
-              >
-                <div class="card features-card">
-                  <div class="card-body">
-                    <div class="icon">
-                      <i class="fa fa-video-camera"></i>
-                    </div>
-                    <h5 class="card-title heading pt-5">Webcast Services</h5>
-                    <p class="card-text">
-                      Facilisis arcu ligula, malesuada id tincidunt laoreet,
-                      facilisis at justo.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div
-                class="col-12 col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center"
-              >
-                <div class="card features-card">
-                  <div class="card-body">
-                    <div class="icon">
-                      <i class="fa fa-server"></i>
-                    </div>
-                    <h5 class="card-title heading pt-5">Disaster Recovery</h5>
-                    <p class="card-text">
-                      Proin arcu ligula, malesuada id tincidunt laoreet,
-                      facilisis at justo.
-                    </p>
-                  </div>
-                </div>
+    <!-- Section Teams Start -->
+    <section id="teams">
+      <div class="container container-teams">
+        <div class="row">
+          <div class="col-lg-12 d-flex flex-column justify-content-center align-items-center">
+            <div class="heading">
+              <h2>Our Team</h2>
+            </div>
+            <div class="col-lg-6">
+              <div class="paragraph">
+                <p>Donec vulputate urna sed rutrum venenatis. Cras consequat magna quis arcu elementum, quis congue
+                  risus volutpat.</p>
               </div>
             </div>
           </div>
         </div>
-      </section>
-      <!-- Section Features Ends -->
-
-      <!-- Section Services Start -->
-      <section id="services">
-        <div class="container services-container">
-          <div class="row services-row">
-            <div class="col-lg-6 col-md-12 col-sm-12 services-heading aling-self-center">
-              <div class="title">
-                <h2>Cloud Services</h2>
+        <div class="row teams-row d-flex flex-wrap align-items-center justify-content-center">
+          <div class="col-lg-3 col-md-6 col-sm-12 item-col">
+            <div class="item">
+              <div class="team-content">
+                <h3 class="name">Fletch Skinner</h3>
+                <span>Product Strategist</span>
               </div>
-              <div class="content">
-                <p>
-                  Phasellus vitae velit sit amet diam semper commodo quis quis
-                  libero. Morbi consequat arcu augue, molestie faucibus metus
-                  ullamcorper vel.
-                </p>
-                <div class="row">
-                  <div class="col-lg-6 col-md-6 col-sm-12">
-                    <a class="service-btn" href="#">
-                      <i class="fa fa-angle-right active"></i>
-                      <span>NearCloud</span>
-                    </a>
-                  </div>
-                  <div class="col-lg-6 col-md-6 col-sm-12">
-                    <a class="service-btn" href="#">
-                      <i class="fa fa-angle-right"></i>
-                      <span>Office Cloud</span>
-                    </a>
-                  </div>
-                  <div class="col-lg-6 col-md-6 col-sm-12">
-                    <a class="service-btn" href="#">
-                      <i class="fa fa-angle-right"></i>
-                      <span>Backup Systems</span>
-                    </a>
-                  </div>
-                  <div class="col-lg-6 col-md-6 col-sm-12">
-                    <a class="service-btn" href="#">
-                      <i class="fa fa-angle-right"></i>
-                      <span>Hybrid Cloud</span>
-                    </a>
-                  </div>
-                  <div class="col-lg-6 col-md-6 col-sm-12">
-                    <a class="service-btn" href="#">
-                      <i class="fa fa-angle-right"></i>
-                      <span>API Cloud</span>
-                    </a>
-                  </div>
-                  <div class="col-lg-6 col-md-6 col-sm-12">
-                    <a class="service-btn" href="#">
-                      <i class="fa fa-angle-right"></i>
-                      <span>SDK Cloud</span>
-                    </a>
-                  </div>
-                  <div class="col-lg-6 col-md-6 col-sm-12">
-                    <a class="service-btn" href="#">
-                      <i class="fa fa-angle-right"></i>
-                      <span>Web Services</span>
-                    </a>
-                  </div>
-                  <div class="col-lg-6 col-md-6 col-sm-12">
-                    <a class="service-btn" href="#">
-                      <i class="fa fa-angle-right"></i>
-                      <span>Cloud Hosting</span>
-                    </a>
-                  </div>
-                </div>
+              <ul class="social-icons">
+                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                <li><a href="#"><i class="fab fa-github"></i></a></li>
+              </ul>
+              <p>Proin arcu ligula, malesuada id tincidunt laoreet, facilisis at justo. Sed at lorem.</p>
+              <div class="image">
+                <img src="./assets/images/card-image-1.jpeg" alt="male user image">
               </div>
-            </div>
-            <div class="col-lg-1 p-0 empty">
-
-            </div>
-
-            <div class="col-lg-5 col-md-12 col-sm-12 services-image">
-              <img
-                class="img-fluid mx-auto d-block"
-                src="./assets/images/blue-1.png"
-                alt="Services photo"
-              />
             </div>
           </div>
-        </div>
-      </section>
-      <!-- Section Services Ends -->
-
-      <!-- Section Design-development  Starts-->
-      <section id="design-development">
-        <div class="container design-development-container">
-          <div class="row design-development-row">
-            <div class="col-lg-5 align-self-center design-image">
-              <img class="img-fluid mx-auto d-block" src="./assets/images/blue-2.png" alt="Development idea photo">
-            </div>
-            <div class="col-lg-1"></div>
-            <div class="col-lg-6 col-md-12 col-sm-12 design-heading aling-self-center">
-              <div class="title">
-                <h2>Design & Development</h2>
+          <div class="col-lg-3 col-md-6 col-sm-12  item-col">
+            <div class="item">
+              <div class="team-content">
+                <h3 class="name">Lance Bogrol</h3>
+                <span>Visual Designer</span>
               </div>
-              <div class="content">
-                <p>
-                  Phasellus vitae velit sit amet diam semper commodo quis quis
-                  libero. Morbi consequat arcu augue, molestie faucibus metus
-                  ullamcorper vel.
-                </p>
-                <div class="row">
-                  <div class="col-lg-6 col-md-6 col-sm-12">
-                    <a class="design-btn" href="#">
-                      <i class="fa fa-angle-right active"></i>
-                      <span>Web Design</span>
-                    </a>
-                  </div>
-                  <div class="col-lg-6 col-md-6 col-sm-12">
-                    <a class="design-btn" href="#">
-                      <i class="fa fa-angle-right"></i>
-                      <span>Mobile App Design</span>
-                    </a>
-                  </div>
-                  <div class="col-lg-6 col-md-6 col-sm-12">
-                    <a class="design-btn" href="#">
-                      <i class="fa fa-angle-right"></i>
-                      <span>Android Development</span>
-                    </a>
-                  </div>
-                  <div class="col-lg-6 col-md-6 col-sm-12">
-                    <a class="design-btn" href="#">
-                      <i class="fa fa-angle-right"></i>
-                      <span>iOS Development</span>
-                    </a>
-                  </div>
-                  <div class="col-lg-6 col-md-6 col-sm-12">
-                    <a class="design-btn" href="#">
-                      <i class="fa fa-angle-right"></i>
-                      <span>Back-End</span>
-                    </a>
-                  </div>
-                  <div class="col-lg-6 col-md-6 col-sm-12">
-                    <a class="design-btn" href="#">
-                      <i class="fa fa-angle-right"></i>
-                      <span>Front-End</span>
-                    </a>
-                  </div>
-                  <div class="col-lg-6 col-md-6 col-sm-12">
-                    <a class="design-btn" href="#">
-                      <i class="fa fa-angle-right"></i>
-                      <span>e-Commerce</span>
-                    </a>
-                  </div>
-                  <div class="col-lg-6 col-md-6 col-sm-12">
-                    <a class="design-btn" href="#">
-                      <i class="fa fa-angle-right"></i>
-                      <span>Print Design</span>
-                    </a>
-                  </div>
-                </div>
+              <ul class="social-icons">
+                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                <li><a href="#"><i class="fab fa-github"></i></a></li>
+              </ul>
+              <p>Proin arcu ligula, malesuada id tincidunt laoreet, facilisis at justo. Sed at lorem.</p>
+              <div class="image">
+                <img src="./assets/images/card-image-2.jpeg" alt="female user image">
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12  item-col">
+            <div class="item">
+              <div class="team-content">
+                <h3 class="name">Valentino Morose</h3>
+                <span>Android Developer</span>
+              </div>
+              <ul class="social-icons">
+                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                <li><a href="#"><i class="fab fa-github"></i></a></li>
+              </ul>
+              <p>Proin arcu ligula, malesuada id tincidunt laoreet, facilisis at justo. Sed at lorem.</p>
+              <div class="image">
+                <img src="./assets/images/card-image-3.jpeg" alt="male user image">
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 item-col">
+            <div class="item">
+              <div class="team-content">
+                <h3 class="name">Giles Posture</h3>
+                <span>iOS Developer</span>
+              </div>
+              <ul class="social-icons">
+                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                <li><a href="#"><i class="fab fa-github"></i></a></li>
+              </ul>
+              <p>Proin arcu ligula, malesuada id tincidunt laoreet, facilisis at justo. Sed at lorem.</p>
+              <div class="image">
+                <img src="./assets/images/card-image-4.jpeg" alt="female user image">
               </div>
             </div>
           </div>
         </div>
-      </section>
-      <!-- Section Design-development Ends-->
+    </section>
+    <!-- Secion Teams Ends -->
 
-      <!-- Section Parallax-Counter Start -->
-      <section id="parallax-counter">
-        <div class="container parallax-container">
-          <div class="row parallax-row ">
-            <div class="col-lg-3 col-md-6 col-sm-12" >
-              <div class="parallax-item">
-                <span class="counter" data-count="96">
-                  0
-                </span>
-                <span class="info">
-                  Project
-                  <br>
-                  Complete
-                </span>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-12">
-              <div class="parallax-item">
-                <span class="counter" data-count="190">
-                  0
-                </span>
-                <span class="info">
-                  Happy <br>
-                  Customer
-                </span>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-12">
-              <div class="parallax-item">
-                <span class="counter" data-count="12">
-                  0
-                </span>
-                <span class="info">
-                  Experienced <br>
-                  Staff
-                </span>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-12">
-              <div class="parallax-item">
-                <span class="counter" data-count="46">
-                  0
-                </span>             
-                <span class="info">
-                  Ongoing <br>
-                  Project
-                </span>
-              </div>
+    <!-- Section Marketing Start -->
+    <section id="marketing">
+      <div class="container container-marketing">
+        <div class="row d-flex text-center justify-content-center">
+          <div class="col-lg-12">
+            <div class="heading">
+              <h1>Pricing Plans</h1>
             </div>
           </div>
-        </div>
-      </section>
-      <!-- Section Parallax-Counter Ends -->
-
-      <!-- Section Teams Start -->
-      <section id="teams">
-        <div class="container container-teams">
-          <div class="row">
-            <div class="col-lg-12 d-flex flex-column justify-content-center align-items-center">
-              <div class="heading">
-                <h2>Our Team</h2>
-              </div>
-              <div class="col-lg-6">
-                <div class="paragraph">
-                  <p>Donec vulputate urna sed rutrum venenatis. Cras consequat magna quis arcu elementum, quis congue risus volutpat.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row teams-row d-flex flex-wrap align-items-center justify-content-center">
-                <div class="col-lg-3 col-md-6 col-sm-12 item-col">
-                  <div class="item">
-                    <div class="team-content">
-                      <h3 class="name">Fletch Skinner</h3>
-                      <span>Product Strategist</span>
-                    </div>
-                    <ul class="social-icons">
-                      <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-                      <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                      <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-                      <li><a href="#"><i class="fab fa-github"></i></a></li>
-                    </ul>
-                    <p>Proin arcu ligula, malesuada id tincidunt laoreet, facilisis at justo. Sed at lorem.</p>
-                    <div class="image">
-                      <img src="./assets/images/card-image-1.jpeg" alt="male user image">
-                    </div>
-                  </div>
-                  </div>
-                  <div class= "col-lg-3 col-md-6 col-sm-12  item-col">
-                    <div class="item">
-                      <div class="team-content">
-                        <h3 class="name">Lance Bogrol</h3>
-                        <span>Visual Designer</span>
-                      </div>
-                      <ul class="social-icons">
-                        <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                        <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-                        <li><a href="#"><i class="fab fa-github"></i></a></li>
-                      </ul>
-                      <p>Proin arcu ligula, malesuada id tincidunt laoreet, facilisis at justo. Sed at lorem.</p>
-                      <div class="image">
-                        <img src="./assets/images/card-image-2.jpeg" alt="female user image">
-                      </div>
-                    </div>
-                    </div>
-                    <div class= "col-lg-3 col-md-6 col-sm-12  item-col">
-                      <div class="item">
-                        <div class="team-content">
-                          <h3 class="name">Valentino Morose</h3>
-                          <span>Android Developer</span>
-                        </div>
-                        <ul class="social-icons">
-                          <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-                          <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                          <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-                          <li><a href="#"><i class="fab fa-github"></i></a></li>
-                        </ul>
-                        <p>Proin arcu ligula, malesuada id tincidunt laoreet, facilisis at justo. Sed at lorem.</p>
-                        <div class="image">
-                          <img src="./assets/images/card-image-3.jpeg" alt="male user image">
-                        </div>
-                      </div>
-                      </div>
-                      <div class="col-lg-3 col-md-6 col-sm-12 item-col">
-                        <div class="item">
-                          <div class="team-content">
-                            <h3 class="name">Giles Posture</h3>
-                            <span>iOS Developer</span>
-                          </div>
-                          <ul class="social-icons">
-                            <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-                            <li><a href="#"><i class="fab fa-github"></i></a></li>
-                          </ul>
-                          <p>Proin arcu ligula, malesuada id tincidunt laoreet, facilisis at justo. Sed at lorem.</p>
-                          <div class="image">
-                            <img src="./assets/images/card-image-4.jpeg" alt="female user image">
-                          </div>
-              </div>
-          </div>
-        </div>
-      </section>
-      <!-- Secion Teams Ends -->
-
-      <!-- Section Marketing Start -->
-      <section id="marketing">
-        <div class="container container-marketing">
-          <div class="row d-flex text-center justify-content-center">
-            <div class="col-lg-12">
-              <div class="heading">
-                <h1>Pricing Plans</h1>
-              </div>
-            </div>
-           <div class="col-lg-6 ">
+          <div class="col-lg-6 ">
             <div class="paragraph">
-              <p>Donec vulputate urna sed rutrum venenatis. Cras consequat magna quis arcu elementum, quis congue risus volutpat.</p>
+              <p>Donec vulputate urna sed rutrum venenatis. Cras consequat magna quis arcu elementum, quis congue risus
+                volutpat.</p>
             </div>
-           </div>
           </div>
-          <div class="row d-flex flex-wrap justify-content-center align-items-center text-center">
-           <div class="col-lg-4 col-md-6 col-sm-12 price-col">
+        </div>
+        <div class="row d-flex flex-wrap justify-content-center align-items-center text-center">
+          <div class="col-lg-4 col-md-6 col-sm-12 price-col">
             <div class="price-item">
               <div class="price-title">
                 <h2>BASIC PLAN</h2>
@@ -570,8 +531,8 @@
                 <a href="#">Select Plan</a>
               </div>
             </div>
-           </div>
-           <div class="col-lg-4 col-md-6 col-sm-12 price-col">
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 price-col">
             <div class="price-item">
               <div class="price-title active">
                 <h2>Advanced Plan</h2>
@@ -600,8 +561,8 @@
                 <a href="#">Select Plan</a>
               </div>
             </div>
-           </div>
-           <div class="col-lg-4 col-md-6 col-sm-12 price-col">
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 price-col">
             <div class="price-item">
               <div class="price-title">
                 <h2>BASIC PLAN</h2>
@@ -630,88 +591,179 @@
                 <a href="#">Select Plan</a>
               </div>
             </div>
-           </div>
           </div>
         </div>
-      </section>
-      <!-- Section Marketing Ends -->
+      </div>
+    </section>
+    <!-- Section Marketing Ends -->
 
-      <!-- Section Parallax Starts -->
-      <section id="parallax">
-        <div class="container">
-          <div class="row d-flex justify-content-center text-center aling-items-center">
-            <div class="col-lg-12">
-              <div class="parallax-body">
-                <p>We design and develop <span>web apps</span> that delight your users and grow your business.</p>
-                <a class="parallax-btn" href="#">Contact Us</a>
-              </div>
+    <!-- Section Parallax Starts -->
+    <section id="parallax">
+      <div class="container">
+        <div class="row d-flex justify-content-center text-center aling-items-center">
+          <div class="col-lg-12">
+            <div class="parallax-body">
+              <p>We design and develop <span>web apps</span> that delight your users and grow your business.</p>
+              <a class="parallax-btn" href="#">Contact Us</a>
             </div>
           </div>
         </div>
-      </section>
-      <!-- Section Parallax Ends -->
+      </div>
+    </section>
+    <!-- Section Parallax Ends -->
 
-      <!-- Section Blog Starts -->
-      <section id="blog">
-        <div class="container container-blog">
-          <div class="row d-flex justify-content-center text-center ">
-            <div class="col-lg-12">
-              <div class="title">
-                <h1>Latest Blog Posts</h1>
-                <div class="paragraph">
-                  <p>
-                    Donec vulputate urna sed rutrum venenatis. Cras consequat magna quis arcu elementum, quis congue risus volutpat.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row blog-row">
-            <div class="col-lg-4 col-md-6 col-sm-12">
-              <div class="blog-item">
-                <div class="image">
-                  <img src="./assets/images/blog-image-1.jpeg" alt="blog image">
-                </div>
-                <div class="content">
-                  <h3>Jirono Expands the Leadership Team with David Lin, Controller</h3>
-                  <p>
-                    Mauris tellus sem, ultrices varius nisl at, convallis iaculis mauris. Sed eget sem vitae purus tempus dignissim.
-                  </p>
-                  <a href="#">Read More</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-12 ">
-              <div class="blog-item">
-                <div class="image">
-                  <img src="./assets/images/blog-image-1.jpeg" alt="blog image">
-                </div>
-                <div class="content">
-                  <h3>Jirono Expands the Leadership Team with David Lin, Controller</h3>
-                  <p>
-                    Mauris tellus sem, ultrices varius nisl at, convallis iaculis mauris. Sed eget sem vitae purus tempus dignissim.
-                  </p>
-                  <a href="#">Read More</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-12">
-              <div class="blog-item">
-                <div class="image">
-                  <img src="./assets/images/blog-image-1.jpeg" alt="blog image">
-                </div>
-                <div class="content">
-                  <h3>Jirono Expands the Leadership Team with David Lin, Controller</h3>
-                  <p>
-                    Mauris tellus sem, ultrices varius nisl at, convallis iaculis mauris. Sed eget sem vitae purus tempus dignissim.
-                  </p>
-                  <a href="#">Read More</a>
-                </div>
+    <!-- Section Blog Starts -->
+    <section id="blog">
+      <div class="container container-blog">
+        <div class="row d-flex justify-content-center text-center ">
+          <div class="col-lg-12">
+            <div class="title">
+              <h1>Latest Blog Posts</h1>
+              <div class="paragraph">
+                <p>
+                  Donec vulputate urna sed rutrum venenatis. Cras consequat magna quis arcu elementum, quis congue risus
+                  volutpat.</p>
               </div>
             </div>
           </div>
         </div>
-      </section>
-      <!-- Section Blog Ends -->
-    </main>
-  </body>
+        <div class="row blog-row">
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="blog-item">
+              <div class="image">
+                <img src="./assets/images/blog-image-1.jpeg" alt="blog image">
+              </div>
+              <div class="content">
+                <h3>Jirono Expands the Leadership Team with David Lin, Controller</h3>
+                <p>
+                  Mauris tellus sem, ultrices varius nisl at, convallis iaculis mauris. Sed eget sem vitae purus tempus
+                  dignissim.
+                </p>
+                <a href="#">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 ">
+            <div class="blog-item">
+              <div class="image">
+                <img src="./assets/images/blog-image-1.jpeg" alt="blog image">
+              </div>
+              <div class="content">
+                <h3>Jirono Expands the Leadership Team with David Lin, Controller</h3>
+                <p>
+                  Mauris tellus sem, ultrices varius nisl at, convallis iaculis mauris. Sed eget sem vitae purus tempus
+                  dignissim.
+                </p>
+                <a href="#">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="blog-item">
+              <div class="image">
+                <img src="./assets/images/blog-image-1.jpeg" alt="blog image">
+              </div>
+              <div class="content">
+                <h3>Jirono Expands the Leadership Team with David Lin, Controller</h3>
+                <p>
+                  Mauris tellus sem, ultrices varius nisl at, convallis iaculis mauris. Sed eget sem vitae purus tempus
+                  dignissim.
+                </p>
+                <a href="#">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Section Blog Ends -->
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container container-footer">
+      <div class="row">
+        <div class="col-lg-5 col-md-12 col-sm-12 " >
+         <div class="info">
+          <img src="./assets/images/logo-white.png" alt="site logo">
+          <div class="paragraph">
+            Morbi convallis bibendum urna ut viverra. Maecenas quis consequat libero, a feugiat eros. Nunc ut lacinia
+            tortor morbi ultricies laoreet ullamcorper phasellus semper.
+          </div>
+         </div>
+        </div>
+        <div class="col-lg-2 col-md-4 col-sm-6 col-6" >
+          <h5>Helpful Links</h5>
+          <ul class="navigation">
+            <li><a href="#">
+                <i class="fa fa-angle-right"></i>
+                <span>About Us</span>
+              </a></li>
+            <li><a href="#">
+                <i class="fa fa-angle-right"></i>
+                <span>Features</span>
+              </a></li>
+            <li><a href="#">
+                <i class="fa fa-angle-right"></i>
+                <span>FAQ's</span>
+              </a></li>
+            <li><a href="#">
+                <i class="fa fa-angle-right"></i>
+                <span>Blog</span>
+              </a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-4 col-sm-6 col-6">
+          <h5>Support</h5>
+          <ul class="navigation">
+            <li><a href="#">
+                <i class="fa fa-angle-right"></i>
+                <span>Privacy Policy</span>
+              </a></li>
+            <li><a href="#">
+                <i class="fa fa-angle-right"></i>
+                <span>Terms of Use</span>
+              </a></li>
+            <li><a href="#">
+                <i class="fa fa-angle-right"></i>
+                <span>Support Center</span>
+              </a></li>
+            <li><a href="#">
+                <i class="fa fa-angle-right"></i>
+                <span>Contact</span>
+              </a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-12">
+          <h5>Contact Us</h5>
+          <div class="contact">
+            <p>
+              455 West Orchard Street<br>
+              Kings Mountain, NC 28086
+            </p>
+            <p>Phone: (272) 211-7370</p>
+            <p>
+              <span>E-Mail:</span> 
+              <a href="#">support@yourbrand.com</a>
+            </p>
+            <ul class="social-items">
+              <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+              <li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+              <li><a href="#"><i class="fab fa-linkedin-square"></i></a></li>
+              <li><a href="#"><i class="fab fa-google-plus-square"></i></a></li>
+              <li><a href="#"><i class="fab fa-github-square"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <p class="copyright">© 2019 Jirono. All Rights Reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Footer  -->
+</body>
+
 </html>
