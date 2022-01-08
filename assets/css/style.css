@@ -1549,6 +1549,7 @@ footer .container-footer {
 }
 
 footer .container-footer .info img {
+  margin-top: 25px;
   margin-bottom: 25px;
 }
 
