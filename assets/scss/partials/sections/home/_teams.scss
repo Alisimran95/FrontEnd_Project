@@ -1,0 +1,256 @@
+#teams {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    min-width: 100%;
+
+    .container-teams {
+        width: 1140px;
+
+        .heading {
+            h2 {
+                color: $heading-color;
+                font-weight: 400;
+                margin: 0 0 20px;
+            }
+        }
+
+    }
+
+    .paragraph {
+        color: $paragraph-color;
+        font-weight: 400;
+        margin-bottom: 40px;
+        letter-spacing: 0.6px;
+        line-height: 30px;
+        text-align: center;
+        display: inline-block;
+    }
+
+    .item-col {
+        .item {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            position: relative;
+            background: #fff;
+            box-shadow: 0 2px 48px 0 rgb(227, 227, 227 / 1%);
+            border-radius: 5px;
+
+            .team-content {
+                @include transformContent;
+
+            }
+
+            .name {
+                font-weight: 400;
+                font-size: 16px;
+                margin: 5px 0 0;
+                position: relative;
+                z-index: 11;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                color: $white-color;
+            }
+
+            span {
+                font-weight: 400;
+                font-size: 12px;
+                color: $card-span-color;
+                letter-spacing: 0.6px;
+                padding-bottom: 20px;
+                position: relative;
+                z-index: 11;
+            }
+        }
+
+        .social-icons {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            margin-top: 45px;
+            position: relative;
+            top: 50px;
+            z-index: 13;
+            transition: all 0.3s ease;
+
+            li {
+                list-style: none;
+                padding: 10px;
+            }
+        }
+
+        p {
+            margin-top: 70px;
+            margin-bottom: 70px;
+            font-weight: 400;
+            font-size: 14px;
+            color: $nav-link-color;
+            letter-spacing: 0.6px;
+            line-height: 26px;
+            position: relative;
+        }
+
+        .image {
+            overflow: hidden;
+            border: 8px solid $white-color;
+            width: 100px;
+            height: 100px;
+            border-radius: 100%;
+            position: absolute;
+            top: 250px;
+            left: 30%;
+            transition: all 0.4s ease 0s;
+            box-shadow: 0 2px 48px 0 rgb(227, 227, 227 / 1%);
+            z-index: 14;
+        }
+
+        &:hover .image {
+            top: 260px;
+        }
+
+        &:hover .team-content {
+            height: 130px;
+        }
+
+        &:hover .social-icons i {
+            color: $white-color;
+        }
+    }
+}
+
+
+
+//  Responsibilty
+
+@media screen and (max-width:992px) {
+    .container-teams {
+        .item{
+            margin-top: 44px;
+            margin-bottom: 50px;
+        }
+    }
+}
+
+@media screen and (max-width:576px) {
+    #teams {
+        padding-top: 80px;
+        padding-bottom: 80px;
+        min-width: 100%;
+    
+        .container-teams {
+            width: 340px !important;
+    
+            .heading {
+                h2 {
+                    color: $heading-color;
+                    font-weight: 400;
+                    margin: 0 0 20px;
+                }
+            }
+    
+        }
+    
+        .paragraph {
+            color: $paragraph-color;
+            font-weight: 400;
+            margin-bottom: 40px;
+            letter-spacing: 0.6px;
+            line-height: 30px;
+            text-align: center;
+            display: inline-block;
+        }
+    
+        .item-col {
+            .item {
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                position: relative;
+                background: #fff;
+                box-shadow: 0 2px 48px 0 rgb(227, 227, 227 / 1%);
+                border-radius: 5px;
+    
+                .team-content {
+                    @include transformContent;
+    
+                }
+    
+                .name {
+                    font-weight: 400;
+                    font-size: 16px;
+                    margin: 5px 0 0;
+                    position: relative;
+                    z-index: 11;
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+                    color: $white-color;
+                }
+    
+                span {
+                    font-weight: 400;
+                    font-size: 12px;
+                    color: $card-span-color;
+                    letter-spacing: 0.6px;
+                    padding-bottom: 20px;
+                    position: relative;
+                    z-index: 11;
+                }
+            }
+    
+            .social-icons {
+                margin: 0;
+                padding: 0;
+                display: flex;
+                justify-content: center;
+                margin-top: 45px;
+                position: relative;
+                top: 50px;
+                z-index: 13;
+                transition: all 0.3s ease;
+    
+                li {
+                    list-style: none;
+                    padding: 10px;
+                }
+            }
+    
+            p {
+                margin-top: 70px;
+                margin-bottom: 70px;
+                font-weight: 400;
+                font-size: 14px;
+                color: $nav-link-color;
+                letter-spacing: 0.6px;
+                line-height: 26px;
+                position: relative;
+            }
+    
+            .image {
+                overflow: hidden;
+                border: 8px solid $white-color;
+                width: 100px;
+                height: 100px;
+                border-radius: 100%;
+                position: absolute;
+                top: 250px;
+                left: 30%;
+                transition: all 0.4s ease 0s;
+                box-shadow: 0 2px 48px 0 rgb(227, 227, 227 / 1%);
+                z-index: 14;
+            }
+    
+            &:hover .image {
+                top: 260px;
+            }
+    
+            &:hover .team-content {
+                height: 130px;
+            }
+    
+            &:hover .social-icons i {
+                color: $white-color;
+            }
+        }
+    }
+}
