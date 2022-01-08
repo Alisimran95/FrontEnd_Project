@@ -1,0 +1,108 @@
+#blog {
+    padding: 100px 0 70px;
+    min-width: 100%;
+
+    .container-blog {
+        width: 1140px;
+        text-align: center;
+
+        .title{
+
+            h1{
+                margin-bottom: 10px;
+                font-size: 28px;
+                font-weight: 400;
+                letter-spacing: 1.5px;
+                line-height: 30px;
+                color: $heading-color;
+            }
+           .paragraph{
+                font-weight: 400;
+                font-size: 16px;
+                color: $paragraph-color;
+                line-height: 30px;
+           }
+        }
+
+        .blog-item {
+            margin-top: 30px;
+
+            .image {
+                overflow: hidden;
+                height: 220px;
+
+                img {
+
+                    width: 351px;
+                    height: 340px;
+                    object-fit: cover;
+                }
+            }
+
+            .content {
+                margin-top: 20px;
+                margin-bottom: 20px;
+
+                h3 {
+                    font-size: 16px;
+                    font-weight: 400;
+                    color: $heading-color;
+                    line-height: 26px;
+                    cursor: pointer;
+                    transition: all 0.3 ease-in-out;
+
+                    &:hover {
+                        color: $base-color;
+                    }
+                }
+
+                p {
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 26px;
+                    color: $paragraph-color;
+                    margin: 15px 10px;
+                }
+
+                a {
+                    padding: 10px 35px;
+                    background-color: $base-color;
+                    color: $white-color;
+                    text-decoration: none;
+                    border-radius: 5px;
+                    font-size: 14px;
+                    font-weight: 500;
+                    letter-spacing: 0.5px;
+
+                    &:hover {
+                        color: $white-color;
+                        background-color: $hover-dark-blue-color;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Responsibilty  for mobile
+
+@media screen and(max-width:767px) {
+    #blog {
+        min-width: 100% !important;
+
+        .container-blog {
+            width: 100% !important;
+            text-align: center;
+
+                .image {
+                    overflow: hidden;
+                    min-height: 100% !important;
+                    min-width: 100% !important;
+                }
+                .blog-item {
+                    margin-top: 30px;
+                }
+            }
+            
+        }
+    }
