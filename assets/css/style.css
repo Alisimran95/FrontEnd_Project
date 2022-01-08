@@ -1199,3 +1199,158 @@ html {
     width: 340px !important;
   }
 }
+
+#marketing {
+  padding: 100px 0 80px;
+  min-width: 100%;
+  background-color: #F7FAFD;
+}
+
+#marketing .container-marketing {
+  width: 1140px;
+}
+
+#marketing .container-marketing .heading h1 {
+  font-weight: 400;
+  font-size: 28px;
+  color: #3B566E;
+}
+
+#marketing .container-marketing .paragraph {
+  margin-bottom: 40px;
+  font-weight: 400;
+  font-size: 16px;
+  color: #6f8ba4;
+  letter-spacing: 1px;
+  line-height: 38px;
+}
+
+#marketing .container-marketing .price-item {
+  overflow: hidden;
+  margin-bottom: 25px;
+  background-color: white;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 2px 48px 0 #e3e3e3;
+          box-shadow: 0 2px 48px 0 #e3e3e3;
+}
+
+#marketing .container-marketing .price-item .price-title {
+  position: relative;
+  text-align: center;
+  border-bottom: 1px solid #F7FAFD;
+  height: 130px;
+  display: block;
+}
+
+#marketing .container-marketing .price-item .price-title.active {
+  background-color: #585CE9;
+}
+
+#marketing .container-marketing .price-item .price-title.active h2 {
+  color: white;
+}
+
+#marketing .container-marketing .price-item .price-title h2 {
+  color: #3B566E;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 700;
+  position: absolute;
+  width: 100%;
+  top: 45%;
+  letter-spacing: 1.2px;
+}
+
+#marketing .container-marketing .price-item .price-body {
+  text-align: center;
+}
+
+#marketing .container-marketing .price-item .price-body .number {
+  position: relative;
+  background: #F7FAFD;
+  width: 45px;
+  height: 45px;
+  text-align: center;
+  border-radius: 100%;
+  margin: auto;
+  margin-top: -25px;
+}
+
+#marketing .container-marketing .price-item .price-body .number span {
+  position: absolute;
+  top: 10px;
+  left: 43%;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  color: #585CE9;
+  z-index: 11;
+}
+
+#marketing .container-marketing .price-item .price-body .advertise-group {
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
+
+#marketing .container-marketing .price-item .price-body .advertise-group .currency {
+  position: relative;
+  top: -20px;
+  color: #585CE9;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+#marketing .container-marketing .price-item .price-body .advertise-group .price {
+  font-weight: 700;
+  font-size: 36px;
+  color: #585CE9;
+  letter-spacing: 2px;
+}
+
+#marketing .container-marketing .price-item .price-body .advertise-group .month {
+  font-weight: 700;
+  font-size: 14px;
+  color: #585CE9;
+  letter-spacing: 1px;
+}
+
+#marketing .container-marketing .price-item .price-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#marketing .container-marketing .price-item .price-list li {
+  text-decoration: line-through;
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 10px;
+  color: #3B566E;
+  letter-spacing: 1.2px;
+}
+
+#marketing .container-marketing .price-item .price-list li.active {
+  color: #3B566E;
+  text-decoration: none;
+}
+
+#marketing .container-marketing .price-button {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+#marketing .container-marketing .price-button a {
+  text-decoration: none;
+  padding: 10px 30px;
+  background-color: #585CE9;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 570px) {
+  #marketing .container-marketing {
+    width: 340px !important;
+  }
+}

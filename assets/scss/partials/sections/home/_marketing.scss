@@ -1,0 +1,149 @@
+#marketing {
+    padding: 100px 0 80px;
+    min-width: 100%;
+    background-color: $bg-color;
+
+    .container-marketing {
+        width: 1140px;
+
+        .heading {
+            h1 {
+                font-weight: 400;
+                font-size: 28px;
+                color: $heading-color;
+            }
+        }
+
+        .paragraph {
+            margin-bottom: 40px;
+            font-weight: 400;
+            font-size: 16px;
+            color: $paragraph-color;
+            letter-spacing: 1px;
+            line-height: 38px;
+        }
+
+        .price-item {
+                overflow: hidden;
+                margin-bottom: 25px;
+                background-color: $white-color;
+                border-radius: 5px;
+                box-shadow: 0 2px 48px 0 rgb(227, 227, 227 / 1%);
+
+            .price-title {
+                position: relative;
+                text-align: center;
+                border-bottom: 1px solid $icon-color;
+                height: 130px;
+                display: block;
+                
+                &.active{
+                    background-color: $base-color;
+                    h2{
+                        color: $white-color;
+                    }
+                }
+
+                h2 {
+                    color: $heading-color;
+                    text-transform: uppercase;
+                    font-size: 16px;
+                    font-weight: 700;
+                    position: absolute;
+                    width: 100%;
+                    top: 45%;
+                    letter-spacing: 1.2px;
+                }
+            }
+            .price-body{
+                text-align: center;
+                .number{
+                    position: relative;
+                    background: $icon-color;
+                    width: 45px;
+                    height: 45px;
+                    text-align: center;
+                    border-radius: 100%;
+                    margin: auto;
+                    margin-top: -25px;
+                    span{
+                        position: absolute;
+                        top: 10px;
+                        left: 43%;
+                        text-align: center;
+                        font-size: 16px;
+                        font-weight: 400;
+                        color: $base-color;
+                        z-index: 11;
+                    }
+                }
+
+                .advertise-group{
+                    margin-top: 35px;
+                    margin-bottom: 35px;
+
+                    .currency{
+                        position: relative;
+                        top: -20px;
+                        color: $base-color;
+                        font-weight: 600;
+                        font-size: 16px;
+                    }
+                    .price{
+                        font-weight: 700;
+                        font-size: 36px;
+                        color: $base-color;
+                        letter-spacing: 2px;
+                    }
+                    .month{
+                        font-weight: 700;
+                        font-size: 14px;
+                        color: $base-color;
+                        letter-spacing: 1px;
+                    }
+                }
+            }
+
+            .price-list{
+                list-style:none;
+                padding: 0;
+                margin: 0;
+                li{
+                    &.active{
+                        color:$heading-color;
+                        text-decoration: none;
+                    }
+                    // padding: 3px 0px;
+                    text-decoration: line-through; 
+                    font-size: 14px;
+                    font-weight: 400;
+                    margin-bottom: 10px;
+                    color:$heading-color;
+                    letter-spacing: 1.2px;
+                }
+            }
+        }
+        .price-button{
+            margin-top: 50px;
+            margin-bottom: 50px;
+            a{
+                text-decoration: none;
+                padding: 10px 30px;
+                background-color: $base-color;
+                border-radius: 5px;
+                color: $white-color;
+                font-size: 16px;
+                font-weight: 400;
+            }
+        }
+    }
+}
+
+// Responsibilty for small devices
+@media screen and(max-width:570px) {
+    #marketing {
+        .container-marketing {
+            width: 340px !important;
+        }
+    }    
+}
