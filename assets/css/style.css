@@ -1406,6 +1406,8 @@ html {
   text-decoration: none;
   color: #585CE9;
   border-radius: 5px;
+  font-weight: 400;
+  text-transform: uppercase;
 }
 
 @media screen and (max-width: 481px) {
