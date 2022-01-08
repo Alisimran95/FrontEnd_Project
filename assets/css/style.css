@@ -1407,3 +1407,15 @@ html {
   color: #585CE9;
   border-radius: 5px;
 }
+
+@media screen and (max-width: 481px) {
+  #parallax {
+    min-width: 100% !important;
+  }
+  #parallax .parallax-body {
+    margin: 0 !important;
+  }
+  #parallax .parallax-body .parallax-btn {
+    top: 0px;
+  }
+}

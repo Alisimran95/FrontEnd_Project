@@ -49,3 +49,18 @@
         }
     }
 }
+
+// Responsibilty
+
+@media screen and(max-width:481px) {
+ #parallax{
+     min-width:100% !important;
+     
+     .parallax-body{
+        margin:0 !important;
+        .parallax-btn{
+            top: 0px;
+        }
+    }
+ }
+}
