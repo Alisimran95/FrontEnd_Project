@@ -654,14 +654,14 @@ html {
   font-weight: 400;
   font-size: 28px;
   color: #3B566E;
-  margin-bottom: 35px;
+  margin-bottom: 20px;
 }
 
 #design-development .design-development-container .content p {
   font-size: 16px;
   font-weight: 400;
   color: #6f8ba4;
-  margin-bottom: 35px;
+  margin-bottom: 20px;
 }
 
 #design-development .design-development-container .design-btn {
@@ -726,7 +726,7 @@ html {
   top: 0;
   color: #3B566E;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 14px;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
