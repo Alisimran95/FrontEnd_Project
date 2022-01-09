@@ -545,7 +545,7 @@ html {
 
 #services {
   min-width: 100%;
-  padding: 100px 0 50px;
+  padding: 150px 0 150px;
   background-color: #F7FAFD;
 }
 
@@ -655,8 +655,7 @@ html {
 
 #design-development {
   min-width: 100%;
-  padding-top: 100px;
-  padding-bottom: 80px;
+  padding: 150px 0 150px;
 }
 
 #design-development .design-development-container {
@@ -758,18 +757,10 @@ html {
 
 @media screen and (max-width: 576px) {
   #design-development {
-    width: 100% !important;
-    padding-top: 100px !important;
-    padding-bottom: 80px !important;
+    min-width: 100% !important;
   }
   #design-development .design-development-container {
     width: 100% !important;
-  }
-  #design-development .design-development-container .title h2 {
-    font-weight: 400;
-    font-size: 28px;
-    color: #3B566E;
-    margin-bottom: 20px;
   }
 }
 
