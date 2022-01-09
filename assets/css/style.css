@@ -645,9 +645,9 @@ html {
 }
 
 #design-development {
-  width: 100% !important;
-  padding-top: 100px !important;
-  padding-bottom: 80px !important;
+  min-width: 100%;
+  padding-top: 100px;
+  padding-bottom: 80px;
 }
 
 #design-development .design-development-container {
@@ -709,6 +709,7 @@ html {
 
 #design-development .design-development-container .design-btn i.active {
   position: absolute;
+  width: 50px;
   left: 0px;
   top: 0;
   padding: 15px 30px;
@@ -744,6 +745,23 @@ html {
 
 #design-development .design-development-container .design-btn:hover span {
   left: 70px;
+}
+
+@media screen and (max-width: 576px) {
+  #design-development {
+    width: 100% !important;
+    padding-top: 100px !important;
+    padding-bottom: 80px !important;
+  }
+  #design-development .design-development-container {
+    width: 100% !important;
+  }
+  #design-development .design-development-container .title h2 {
+    font-weight: 400;
+    font-size: 28px;
+    color: #3B566E;
+    margin-bottom: 20px;
+  }
 }
 
 #parallax-counter {
