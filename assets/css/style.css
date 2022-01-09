@@ -802,7 +802,8 @@ html {
 
 #parallax-counter .parallax-item {
   position: relative;
-  height: 250px;
+  -webkit-transition: all  0.3s ease;
+  transition: all  0.3s ease;
   overflow: hidden;
 }
 
@@ -824,7 +825,7 @@ html {
   width: 120px !important;
   left: 0px;
   right: 0px;
-  top: 50%;
+  top: 70%;
   margin: auto;
   border-top: 1px dashed white;
   z-index: 100;
@@ -836,6 +837,28 @@ html {
   font-weight: 400;
   font-size: 16px;
   text-align: center;
+}
+
+#parallax-counter .parallax-item:hover {
+  -webkit-transform: translateY(-10%);
+          transform: translateY(-10%);
+}
+
+@media screen and (max-width: 576px) {
+  #parallax-counter {
+    background-attachment: fixed !important;
+    background-position: center !important;
+    min-width: 100% !important;
+  }
+  #parallax-counter::before {
+    top: 0% !important;
+    left: 0% !important;
+    width: 100% !important;
+    min-width: 100% !important;
+  }
+  #parallax-counter .parallax-container {
+    width: 100% !important;
+  }
 }
 
 #teams {
