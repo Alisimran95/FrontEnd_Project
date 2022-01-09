@@ -1,78 +1,115 @@
-.features-row{
-    width: 1140px;
-    height: 289px;
-    margin-top: 100px;
-    
-    .features-card{
-        padding: 0;
-        margin: 0;
-        width: 85%;
-        height: 260px;
-        text-align: center; 
-        border: none;
-        outline: none;
-        border-radius: 5px;
-        background: $white-color;
-        box-shadow: 0 2px 48px 0 rgb(227, 227, 227 / 1%);
-        // box-shadow: 0 2px 48px 0 rgb(227 227 227);
-        cursor: pointer;
+#features{
+    min-width: 100%;
+    padding: 100px;
+    // margin-top: 50px;
+    // margin-bottom: 50px;
+    background-color: $bg-color;
 
-        .heading{
-            font-weight: 400;
-            font-size: 16px;
-            color: #3B566E;
-        }
-        .card-text{
-            font-size: 14px;
-            font-weight: 400;
-            color: $nav-link-color;
-        }
+    .container-features{
+        width: 1140px;
 
-        .icon{
-            margin-top: 20px;
-            position: relative;
-            display: flex;
-            justify-content: center;
-            margin-bottom: 30px;
-            cursor: pointer;
-            i{
-                position: absolute;
-                color: $base-color;
-                border: 0px solid $base-color;
-                background-color: #F7FAFD;
-                border-radius: 50%;
-                height: 50px;
-                width: 50px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                text-align: center;
-                z-index: 99;
+        .title{
+            h2{
+                font-weight: 400;
+                font-size: 28px;
+                color: $heading-color;
+                letter-spacing: 1.5px;
+                line-height: 35px;
+                margin-bottom: 20px;
             }
         }
-        &:hover {
-            background-color: $base-color;
-            box-shadow: 0;
+        .content{
+            p{
+                color: $paragraph-color;
+                font-weight: 400;
+                letter-spacing: 1px;
+            }
         }
-        &:hover .heading {
-            color: $white-color;
-        }
-        &:hover .card-text {
-            color: $white-color;
+
+        .about-body-row{
+            // margin-top: 50px;
+            
+            .features-card{
+                padding: 30px;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                background-color: $white-color;
+                box-shadow: 0 2px 48px 0 rgb(227, 227, 227 / 1%);
+                transition: all 0.4s ease;
+                cursor: pointer;
+                border-radius: 5px;
+                // height: 200px !important;
+                .icon{
+                    position: relative;
+                    border-radius: 100%;
+                    height: 67px;
+                    width: 67px;
+                    margin: auto;
+                    margin-bottom: 20px;
+                    line-height: 70px;
+                    background-color: $icon-color;
+                    transition: all 0.4s ease;
+
+                    i{
+                        font-size: 20px;
+                        color: $base-color;
+                        position: relative;
+                        
+                    }
+                }
+                h5{
+                    font-weight: 400;
+                    font-size: 16px;
+                    color: $heading-color;
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+                }
+                p{
+                    font-weight: 400;
+                    font-size: 14px;
+                    letter-spacing: 1px;
+                    margin-bottom: 10px;
+                    margin-top: 20px;
+                    display: inline-block;
+                    position: relative;
+                    z-index: 10;
+                    color: $paragraph-color;
+                }
+
+                &:hover .icon{
+                    background-color: $white-color
+                }
+                &:hover{
+                    background-color: $base-color;
+                }
+                &:hover h5{
+                color: $white-color;;
+                }
+                &:hover p{
+                    color: $white-color;
+                }
+
+            }
         }
     }
-   
 }
 
-// Responsibilty
-
 @media screen and(max-width:992px) {
-    .features-row{
-        padding: 0;
-        margin:0;
-        margin-top: 600px;
-        .features-card{
-            margin:10px 10px;
+    #features{
+        min-width: 100% !important;
+    
+        .container-features{
+            width: 100% !important;
+        }
+    }
+}
+
+@media screen and(max-width:576px) {
+    #features{
+        min-width: 100% !important;
+    
+        .container-features{
+            width: 100% !important;
         }
     }
 }
