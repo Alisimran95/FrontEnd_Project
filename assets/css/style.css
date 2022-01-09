@@ -2562,30 +2562,18 @@ footer .container-footer .copyright {
   letter-spacing: 1.1px;
 }
 
-#faq .container-faq .accordion-right {
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
-#faq .container-faq .accordion-right .accordion-item {
+#faq .container-faq .accordion-item {
   background-color: white;
   -webkit-box-shadow: 0 2px 48px 0 #e3e3e3;
           box-shadow: 0 2px 48px 0 #e3e3e3;
   border-bottom: 1px solid #F7FAFD;
+  outline: none;
 }
 
-#faq .container-faq .accordion-right .accordion-item .accordion-question {
-  cursor: pointer;
-  -webkit-transition: all 0.4s ease;
-  transition: all 0.4s ease;
-  padding: 8px;
-}
-
-#faq .container-faq .accordion-right .accordion-item .accordion-question h5 {
-  display: inline-block;
+#faq .container-faq .accordion-item span {
   color: #3B566E;
   font-weight: 400;
-  line-height: 40px;
+  line-height: 30px;
   letter-spacing: 1.5px;
   font-size: 16px;
   margin-left: 40px;
@@ -2594,31 +2582,21 @@ footer .container-footer .copyright {
   transition: all 0.4s ease;
 }
 
-#faq .container-faq .accordion-right .accordion-item .accordion-question:hover {
+#faq .container-faq .accordion-item:hover {
   background-color: #F7FAFD;
 }
 
-#faq .container-faq .accordion-right .accordion-item .accordion-question:hover h5 {
+#faq .container-faq .accordion-item:hover span {
   margin-left: 50px;
 }
 
-#faq .container-faq .accordion-right .accordion-item .accordion-answer {
-  display: none;
-  -webkit-transition: all 0.4s ease;
-  transition: all 0.4s ease;
-}
-
-#faq .container-faq .accordion-right .accordion-item .accordion-answer p {
+#faq .container-faq .accordion-item p {
   font-weight: 400;
   font-size: 14px;
   color: #6f8ba4;
   margin-left: 40px;
   margin-right: 40px;
   line-height: 30px;
-}
-
-#faq .container-faq .accordion-right .accordion-item .active {
-  display: block;
 }
 
 @media screen and (max-width: 576px) {
@@ -2628,6 +2606,16 @@ footer .container-footer .copyright {
     padding-bottom: 40px;
   }
   #faq .container-faq {
+    width: 100% !important;
+  }
+  #faq .container-faq #faq-btn {
+    width: 100% !important;
+  }
+  #faq .container-faq .accordion {
+    margin-top: 30px !important;
+    width: 100% !important;
+  }
+  #faq .container-faq .accordion .accordion-item {
     width: 100% !important;
   }
 }

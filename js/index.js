@@ -9,14 +9,13 @@ menuIcon.addEventListener("click", () => {
 
 // Accordion FAQ section start
 
-
-document.querySelectorAll(".accordion-question").forEach(a => {
-    a.addEventListener("click", () => {
-        if (a.classList.contains("accordion-question")) {
-            a.nextElementSibling.classList.toggle("active");
-        }
-    })
-})
+// document.querySelectorAll(".accordion-question").forEach(a => {
+//     a.addEventListener("click", () => {
+//         if (a.classList.contains("accordion-question")) {
+//             a.nextElementSibling.classList.toggle("active");
+//         }   
+//     })
+// })
 
 // Accordion Faq section ends
 
