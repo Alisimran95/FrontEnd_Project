@@ -546,57 +546,24 @@ html {
 }
 
 #services .services-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  width: 1140px;
 }
 
-#services .services-container .services-row {
-  width: 1440px;
-  height: 445px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-#services .services-container .services-row .services-heading {
-  width: 570px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-#services .services-container .services-row .services-heading h2 {
+#services .services-container .title h2 {
   font-weight: 400;
   font-size: 28px;
   color: #3B566E;
   margin-bottom: 35px;
 }
 
-#services .services-container .services-row .services-heading p {
+#services .services-container .content p {
   font-size: 16px;
   font-weight: 400;
   color: #6f8ba4;
   margin-bottom: 35px;
 }
 
-#services .services-container .services-row .content .service-btn {
+#services .services-container .service-btn {
   text-decoration: none;
   width: 100%;
   display: inline-block;
@@ -614,20 +581,11 @@ html {
   position: relative;
   overflow: hidden;
   margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
-#services .services-container .services-row .content .service-btn i.active {
-  position: absolute;
-  left: 0px;
-  top: 0;
-  padding: 15px 30px;
-  color: black;
-  -webkit-clip-path: polygon(0% 0%, 51% 0, 73% 46%, 100% 100%, 0% 100%);
-          clip-path: polygon(0% 0%, 51% 0, 73% 46%, 100% 100%, 0% 100%);
-  background-color: #585CE9;
-}
-
-#services .services-container .services-row .content .service-btn i {
+#services .services-container .service-btn i {
   position: absolute;
   left: 0px;
   top: 0;
@@ -636,97 +594,51 @@ html {
   font-size: 12px;
   -webkit-clip-path: polygon(0% 0%, 51% 0, 73% 46%, 100% 100%, 0% 100%);
           clip-path: polygon(0% 0%, 51% 0, 73% 46%, 100% 100%, 0% 100%);
-  background-color: #F7FAFD;
+  background-color: white;
+  z-index: 100;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+}
+
+#services .services-container .service-btn i.active {
+  position: absolute;
+  left: 0px;
+  top: 0;
+  padding: 15px 30px;
+  color: black;
+  font-size: 12px;
+  -webkit-clip-path: polygon(0% 0%, 51% 0, 73% 46%, 100% 100%, 0% 100%);
+          clip-path: polygon(0% 0%, 51% 0, 73% 46%, 100% 100%, 0% 100%);
+  background-color: #585CE9;
   z-index: 100;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
-  -webkit-transform: translateX(-30%);
-          transform: translateX(-30%);
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
 }
 
-#services .services-container .services-row .content .service-btn span {
+#services .services-container .service-btn span {
   position: absolute;
-  left: 100px;
+  left: 60px;
   top: 0;
   color: #3B566E;
   font-weight: 400;
   font-size: 16px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
-#services .services-container .services-row .content .service-btn:hover i {
+#services .services-container .service-btn:hover i {
   background-color: #585CE9;
   -webkit-transform: translateX(0%);
           transform: translateX(0%);
   color: white;
 }
 
-#services .services-container .services-row .services-image {
-  width: 475px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
-}
-
-@media screen and (max-width: 992px) {
-  #services {
-    max-width: 100%;
-    padding: 0;
-    margin-top: 200px !important;
-  }
-  #services .services-row {
-    min-width: 100% !important;
-    min-height: 100% !important;
-    margin-top: 200px !important;
-  }
-  #services .services-row .services-heading {
-    min-width: 100% !important;
-    min-height: 100% !important;
-  }
-  #services .services-row .services-image {
-    min-width: 100% !important;
-    min-height: 100% !important;
-  }
-}
-
-@media screen and (min-width: 556px) and (max-width: 770px) {
-  #services {
-    min-width: 100%;
-    padding: 0;
-    margin-top: 500px !important;
-  }
-  #services .services-row {
-    min-width: 100% !important;
-    min-height: 100% !important;
-    margin-top: 400px !important;
-  }
-  #services .services-row .services-heading {
-    min-width: 100% !important;
-    min-height: 100% !important;
-  }
-}
-
-@media screen and (max-width: 555px) {
-  #services {
-    min-width: 100%;
-    padding: 0;
-    margin-top: 500px !important;
-  }
-  #services .services-row {
-    min-width: 100% !important;
-    min-height: 100% !important;
-    margin-top: 400px !important;
-  }
-  #services .services-row .services-heading {
-    min-width: 100% !important;
-    min-height: 100% !important;
-  }
+#services .services-container .service-btn:hover span {
+  left: 70px;
 }
 
 #design-development {
