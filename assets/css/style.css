@@ -2613,6 +2613,8 @@ footer .container-footer .copyright {
 
 #faq .container-faq .accordion-right .accordion-item .accordion-answer {
   display: none;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
 }
 
 #faq .container-faq .accordion-right .accordion-item .accordion-answer p {
