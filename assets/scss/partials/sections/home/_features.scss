@@ -104,6 +104,15 @@
     }
 }
 
+@media screen and(max-width:776px) {
+    #features{
+        min-width: 100% !important;
+    
+        .container-features{
+            width: 100% !important;
+        }
+    }
+}
 @media screen and(max-width:576px) {
     #features{
         min-width: 100% !important;
