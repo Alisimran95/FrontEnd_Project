@@ -6,12 +6,13 @@
     .services-container{
         width: 1140px;
 
+
         .title{
             h2{
                 font-weight: 400;
                 font-size: 28px;
                 color: $heading-color;
-                margin-bottom: 35px;
+                margin-bottom: 20px;
             }
         }
         .content{
@@ -19,14 +20,14 @@
                 font-size: 16px;
                 font-weight: 400;
                 color: $paragraph-color;
-                margin-bottom: 35px;
+                margin-bottom: 20px;
             }
         }
         .service-btn{
 
             @include serviceButton;
             margin-top: 10px;
-            margin-bottom: 10px;
+            // margin-bottom: 10px;
             i {
                 position: absolute;
                 left: 0px;
@@ -60,7 +61,7 @@
                 top: 0;
                 color: $heading-color;
                 font-weight: 400;
-                font-size: 16px;
+                font-size: 14px;
                 transition:all 0.5s ease;
             }
 
@@ -73,7 +74,6 @@
                 left: 70px;
             }
         }
-
     }
 }
 

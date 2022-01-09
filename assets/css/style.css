@@ -553,14 +553,14 @@ html {
   font-weight: 400;
   font-size: 28px;
   color: #3B566E;
-  margin-bottom: 35px;
+  margin-bottom: 20px;
 }
 
 #services .services-container .content p {
   font-size: 16px;
   font-weight: 400;
   color: #6f8ba4;
-  margin-bottom: 35px;
+  margin-bottom: 20px;
 }
 
 #services .services-container .service-btn {
@@ -582,7 +582,6 @@ html {
   overflow: hidden;
   margin: auto;
   margin-top: 10px;
-  margin-bottom: 10px;
 }
 
 #services .services-container .service-btn i {
@@ -625,7 +624,7 @@ html {
   top: 0;
   color: #3B566E;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 14px;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
