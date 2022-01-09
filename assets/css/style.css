@@ -644,6 +644,15 @@ html {
   left: 70px;
 }
 
+@media screen and (max-width: 576px) {
+  #services {
+    min-width: 100% !important;
+  }
+  #services .services-container {
+    width: 100% !important;
+  }
+}
+
 #design-development {
   min-width: 100%;
   padding-top: 100px;
