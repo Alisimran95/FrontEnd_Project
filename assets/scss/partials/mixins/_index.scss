@@ -69,3 +69,33 @@
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
 }
+
+
+// For About page image section
+
+@mixin missionImage{
+    overflow: hidden;
+    border-radius: 5px;
+    width: 70%;
+    height: 70%;
+    float: left;
+    position: relative;
+    left: 0;
+    top: 0;
+    z-index: 5;
+}
+
+@mixin  missionTxt {
+    background-color: $white-color;
+    box-shadow: 0 2px 48px 0 rgb(227, 227, 227 / 1%);
+    float: right;
+    width: 40%;
+    position: absolute;
+    z-index: 10;
+    right: 0px;
+    top: 50%;
+   //  margin-right: 50px;
+    border-radius: 5px;
+    padding: 30px;
+    transform: translateY(-50%);
+}

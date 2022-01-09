@@ -1,0 +1,200 @@
+#about-body{
+    min-width: 100%;
+    padding: 50px;
+    // margin-top: 50px;
+    // margin-bottom: 50px;
+    background-color: $bg-color;
+
+    .container-about-body{
+        width: 1140px;
+
+        .title{
+            h2{
+                font-weight: 400;
+                font-size: 28px;
+                color: $heading-color;
+                letter-spacing: 1.5px;
+                line-height: 35px;
+                margin-bottom: 20px;
+            }
+        }
+        .content{
+            p{
+                color: $paragraph-color;
+                font-weight: 400;
+                letter-spacing: 1px;
+            }
+        }
+
+        .about-body-row{
+            margin-top: 50px;
+            
+            .about-card{
+                padding: 30px;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                background-color: $white-color;
+                box-shadow: 0 2px 48px 0 rgb(227, 227, 227 / 1%);
+                transition: all 0.4s ease;
+                cursor: pointer;
+                border-radius: 5px;
+                // height: 200px !important;
+                .icon{
+                    position: relative;
+                    border-radius: 100%;
+                    height: 67px;
+                    width: 67px;
+                    margin: auto;
+                    margin-bottom: 20px;
+                    line-height: 70px;
+                    background-color: $icon-color;
+                    transition: all 0.4s ease;
+
+                    i{
+                        font-size: 20px;
+                        color: $base-color;
+                        position: relative;
+                        
+                    }
+                }
+                h5{
+                    font-weight: 400;
+                    font-size: 16px;
+                    color: $heading-color;
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+                }
+                p{
+                    font-weight: 400;
+                    font-size: 14px;
+                    letter-spacing: 1px;
+                    margin-bottom: 10px;
+                    margin-top: 20px;
+                    display: inline-block;
+                    position: relative;
+                    z-index: 10;
+                    color: $paragraph-color;
+                }
+
+                &:hover .icon{
+                    background-color: $white-color
+                }
+                &:hover{
+                    background-color: $base-color;
+                }
+                &:hover h5{
+                color: $white-color;;
+                }
+                &:hover p{
+                    color: $white-color;
+                }
+
+            }
+        }
+
+        // Row third scss start
+        .mission{
+            margin-top: 100px ;
+            margin-bottom: 100px ;
+            float: left;
+            width: 100%;
+            position: relative;
+
+                .mission-image{
+                   @include missionImage;
+
+                    .zoom{
+                        position: relative;
+                        overflow: hidden;
+                        transition: all 0.4s ease-in-out;
+
+                        img{
+                            width: 100% ;
+                            position: relative;
+                            transform: scale(1);
+                            
+                        }
+
+                    }
+                    &:hover img{
+                        transform: scale(1.1);
+                    }
+                  
+                }
+            
+            .mission-text{
+                @include missionTxt;
+                
+                 h2{
+                     color: $heading-color;
+                     font-weight: 400;
+                     font-size: 20px;
+                     line-height: 40px;
+                 }
+                 p{
+                     margin-top: 20px;
+                     color: $paragraph-color;
+                     font-weight: 400;
+                     font-size: 16px;
+                     line-height: 30px;
+                 }
+            }
+        }
+    }
+}
+
+@media screen and(max-width:992px) {
+    #about-body{
+        min-width: 100% !important;
+    
+        .container-about-body{
+            width: 100% !important;
+
+            .mission{
+
+                .mission-image{
+                    width: 100% !important;
+                    height: 100% !important;
+                }
+                .mission-text{
+                    width: 100% !important;
+                    // float: left;
+                    position: relative !important;
+                    top:0% !important;
+                    left: 0px !important;
+                    margin-top: 20px  !important;
+                    transform: translateY(0%);
+                }
+            }
+            
+        }
+    }
+}
+
+@media screen and(max-width:576px) {
+    #about-body{
+        min-width: 100% !important;
+    
+        .container-about-body{
+            width: 100% !important;
+
+            .mission{
+
+                .mission-image{
+                    width: 100% !important;
+                    height: 100% !important;
+                }
+                .mission-text{
+                    width: 100% !important;
+                    // float: left;
+                    position: relative !important;
+                    top:0% !important;
+                    left: 0px !important;
+                    margin-top: 20px  !important;
+                    transform: translateY(0%);
+                }
+            }
+            
+        }
+    }
+}
