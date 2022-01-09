@@ -1,7 +1,7 @@
 #design-development {
     width: 100% !important;
-    padding-top: 80px;
-    padding-bottom: 50px;
+    padding-top: 100px !important;
+    padding-bottom: 80px !important;
 
     .design-development-container {
         width: 1140px;
@@ -30,7 +30,8 @@
 
         .design-btn {
             @include serviceButton;
-
+            margin-top: 10px;
+            margin-bottom: 10px;
             i {
                 position: absolute;
                 left: 0px;

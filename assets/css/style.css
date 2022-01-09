@@ -731,8 +731,8 @@ html {
 
 #design-development {
   width: 100% !important;
-  padding-top: 80px;
-  padding-bottom: 50px;
+  padding-top: 100px !important;
+  padding-bottom: 80px !important;
 }
 
 #design-development .design-development-container {
@@ -771,6 +771,8 @@ html {
   position: relative;
   overflow: hidden;
   margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 #design-development .design-development-container .design-btn i {
