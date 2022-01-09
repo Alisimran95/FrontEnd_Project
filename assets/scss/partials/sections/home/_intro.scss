@@ -1,12 +1,10 @@
-.intro-row {
-    width: 1140px;
-    height: 543px;
-    margin: 0;
-    padding: 0;
-    margin-top: 130px;
+#intro {
+    min-width: 100%;
+    padding-top: 130px;
+    padding-bottom: 100px;
 
-    .intro-title {
-        height: 543px;
+    .intro-container {
+        width: 1140px;
 
         h1 {
             font-size: 28px;
@@ -18,6 +16,7 @@
             span {
                 color: $base-color;
             }
+
         }
 
         p {
@@ -28,7 +27,7 @@
             letter-spacing: 1px;
         }
 
-        #intro-btn {
+        a#intro-btn {
             @include introButton;
 
             &:hover {
@@ -36,12 +35,7 @@
             }
         }
 
-
-    }
-
-    .intro-content {
-        padding: 0;
-        margin: 0;
+        // Card part start
 
         .cards {
             height: 543px;
@@ -75,26 +69,28 @@
                     bottom: 0;
                     height: 190px;
 
-                    .video-icon{
+                    .video-icon {
                         position: absolute;
                         width: 100%;
                         height: 100%;
                         top: 0;
-                        left:0;
+                        left: 0;
                         z-index: 1000;
                         display: flex;
                         justify-content: center;
                         align-items: center;
-                        i{
-                           color: $white-color;
-                           opacity: 0.9;
-                           font-size: 40px;
-                           padding: 10px;
-                           border-radius: 50%;
-                           border: 1px solid $white-color;
+
+                        i {
+                            color: $white-color;
+                            opacity: 0.9;
+                            font-size: 40px;
+                            padding: 10px;
+                            border-radius: 50%;
+                            border: 1px solid $white-color;
                         }
                     }
                 }
+
 
                 &.image-4 {
                     @extend %introImageSpec2;
@@ -106,6 +102,10 @@
 
                         span {
                             align-self: flex-start;
+                        }
+
+                        p {
+                            color: $white-color;
                         }
                     }
 
@@ -131,38 +131,48 @@
 }
 
 
-// Respnsibilty 
+// Rsponsibilty for intro section
 
 @media screen and(max-width:992px) {
+    
+    #intro{
+        width: 100% !important;
 
-    .intro-row {
-        margin: 0;
-        padding: 0;
 
-        .intro-title {
-            align-items: center;
-            width: 80%;
-            text-align: center;
-            margin: 0;
-            padding: 0;
-        }
+    .intro-container {
+        width: 100% !important;
 
-        .intro-content {
-            padding: 0px 20px 0 20px;
-        }
-    }
-}
-@media screen and (max-width:481px){
-    .intro-row {
-        margin: 0;
-        padding: 0;
-
-        .intro-title {
-            align-items: center;
-            width: 100% !important;
-            text-align:center;
-            margin: 0 0 20px;
-            padding: 0;
+       .intro-title{
+           text-align: center;
+           align-items: center;
+           justify-content: center;
+       }
+        .cards{
+            margin-top: 20px;
         }
     }
+    }
+
 }
+@media screen and(max-width:576px) {
+    
+    #intro{
+        width: 100% !important;
+
+
+    .intro-container {
+        width: 100% !important;
+
+       .intro-title{
+           text-align: center;
+           align-items: center;
+           justify-content: center;
+       }
+        .cards{
+            margin-top: 20px;
+        }
+    }
+    }
+
+}
+

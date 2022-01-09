@@ -1,11 +1,11 @@
-.intro-row .intro-content .cards .card.image-1, .intro-row .intro-content .cards .card.image-3 {
+#intro .intro-container .cards .card.image-1, #intro .intro-container .cards .card.image-3 {
   position: absolute;
   left: 0;
   float: left;
   width: 49%;
 }
 
-.intro-row .intro-content .cards .card.image-2, .intro-row .intro-content .cards .card.image-4 {
+#intro .intro-container .cards .card.image-2, #intro .intro-container .cards .card.image-4 {
   position: absolute;
   right: 0;
   float: right;
@@ -243,19 +243,17 @@ html {
   }
 }
 
-.intro-row {
+#intro {
+  min-width: 100%;
+  padding-top: 130px;
+  padding-bottom: 100px;
+}
+
+#intro .intro-container {
   width: 1140px;
-  height: 543px;
-  margin: 0;
-  padding: 0;
-  margin-top: 130px;
 }
 
-.intro-row .intro-title {
-  height: 543px;
-}
-
-.intro-row .intro-title h1 {
+#intro .intro-container h1 {
   font-size: 28px;
   margin-bottom: 18px;
   color: #1E3056;
@@ -263,11 +261,11 @@ html {
   font-weight: 400;
 }
 
-.intro-row .intro-title h1 span {
+#intro .intro-container h1 span {
   color: #585CE9;
 }
 
-.intro-row .intro-title p {
+#intro .intro-container p {
   color: #697BA2;
   margin-bottom: 35px;
   font-weight: 400;
@@ -275,7 +273,7 @@ html {
   letter-spacing: 1px;
 }
 
-.intro-row .intro-title #intro-btn {
+#intro .intro-container a#intro-btn {
   border-radius: 5px;
   padding: 10px 15px;
   background-color: #585CE9;
@@ -291,22 +289,17 @@ html {
   letter-spacing: 0.4px;
 }
 
-.intro-row .intro-title #intro-btn:hover {
+#intro .intro-container a#intro-btn:hover {
   background-color: #1b1b7c;
 }
 
-.intro-row .intro-content {
-  padding: 0;
-  margin: 0;
-}
-
-.intro-row .intro-content .cards {
+#intro .intro-container .cards {
   height: 543px;
   position: relative;
   overflow: hidden;
 }
 
-.intro-row .intro-content .cards img {
+#intro .intro-container .cards img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -315,27 +308,27 @@ html {
           transform: scale(1);
 }
 
-.intro-row .intro-content .cards .card {
+#intro .intro-container .cards .card {
   overflow: hidden;
   -webkit-transition: all 0.5;
   transition: all 0.5;
   cursor: pointer;
 }
 
-.intro-row .intro-content .cards .card.image-1 {
+#intro .intro-container .cards .card.image-1 {
   height: 332px;
 }
 
-.intro-row .intro-content .cards .card.image-2 {
+#intro .intro-container .cards .card.image-2 {
   height: 251px;
 }
 
-.intro-row .intro-content .cards .card.image-3 {
+#intro .intro-container .cards .card.image-3 {
   bottom: 0;
   height: 190px;
 }
 
-.intro-row .intro-content .cards .card.image-3 .video-icon {
+#intro .intro-container .cards .card.image-3 .video-icon {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -353,7 +346,7 @@ html {
           align-items: center;
 }
 
-.intro-row .intro-content .cards .card.image-3 .video-icon i {
+#intro .intro-container .cards .card.image-3 .video-icon i {
   color: white;
   opacity: 0.9;
   font-size: 40px;
@@ -362,12 +355,12 @@ html {
   border: 1px solid white;
 }
 
-.intro-row .intro-content .cards .card.image-4 {
+#intro .intro-container .cards .card.image-4 {
   height: 281px;
   bottom: 0;
 }
 
-.intro-row .intro-content .cards .card.image-4 .image-4-about {
+#intro .intro-container .cards .card.image-4 .image-4-about {
   position: absolute;
   height: 100%;
   width: 100%;
@@ -390,12 +383,16 @@ html {
   font-size: 20px;
 }
 
-.intro-row .intro-content .cards .card.image-4 .image-4-about span {
+#intro .intro-container .cards .card.image-4 .image-4-about span {
   -ms-flex-item-align: start;
       align-self: flex-start;
 }
 
-.intro-row .intro-content .cards .card.image-4::after {
+#intro .intro-container .cards .card.image-4 .image-4-about p {
+  color: white;
+}
+
+#intro .intro-container .cards .card.image-4::after {
   content: "";
   position: absolute;
   top: 0;
@@ -407,43 +404,50 @@ html {
   opacity: 0.7;
 }
 
-.intro-row .intro-content .cards .card:hover img {
+#intro .intro-container .cards .card:hover img {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
 
 @media screen and (max-width: 992px) {
-  .intro-row {
-    margin: 0;
-    padding: 0;
+  #intro {
+    width: 100% !important;
   }
-  .intro-row .intro-title {
+  #intro .intro-container {
+    width: 100% !important;
+  }
+  #intro .intro-container .intro-title {
+    text-align: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    width: 80%;
-    text-align: center;
-    margin: 0;
-    padding: 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
-  .intro-row .intro-content {
-    padding: 0px 20px 0 20px;
+  #intro .intro-container .cards {
+    margin-top: 20px;
   }
 }
 
-@media screen and (max-width: 481px) {
-  .intro-row {
-    margin: 0;
-    padding: 0;
+@media screen and (max-width: 576px) {
+  #intro {
+    width: 100% !important;
   }
-  .intro-row .intro-title {
+  #intro .intro-container {
+    width: 100% !important;
+  }
+  #intro .intro-container .intro-title {
+    text-align: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    width: 100% !important;
-    text-align: center;
-    margin: 0 0 20px;
-    padding: 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #intro .intro-container .cards {
+    margin-top: 20px;
   }
 }
 
