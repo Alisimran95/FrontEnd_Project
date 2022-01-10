@@ -99,3 +99,17 @@
     padding: 30px;
     transform: translateY(-50%);
 }
+
+// POSt PAGE button
+@mixin btn-post{
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px 33px;
+    background-color: $base-color;
+    border-radius: 5px;
+    color: $white-color;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 1.2px;
+}
