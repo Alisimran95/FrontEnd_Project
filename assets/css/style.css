@@ -2961,6 +2961,8 @@ footer .container-footer .copyright {
 #post .sidebar .search-items-list li {
   padding: 0;
   margin: 0;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
 }
 
 #post .sidebar .search-items-list li a {
@@ -2987,6 +2989,8 @@ footer .container-footer .copyright {
   color: #3B566E;
   font-weight: 400;
   letter-spacing: 1.6px;
+  -webkit-transition: all .4s ease;
+  transition: all .4s ease;
 }
 
 #post .sidebar .search-items-list li a span {
@@ -3005,6 +3009,10 @@ footer .container-footer .copyright {
   font-size: 10px;
   color: white;
   border-radius: 100PX;
+}
+
+#post .sidebar .search-items-list li:hover strong {
+  margin-left: 70px;
 }
 
 #post .sidebar .tag {
@@ -3029,6 +3037,14 @@ footer .container-footer .copyright {
   font-size: 14px;
   font-weight: 400;
   color: #6f8ba4;
+  cursor: pointer;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+#post .sidebar .tag span:hover {
+  background-color: #585CE9;
+  color: white;
 }
 
 #post .sidebar .post-us {

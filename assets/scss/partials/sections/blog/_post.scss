@@ -103,16 +103,17 @@
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    
+
                     .btn-post {
                         @include btn-post;
-                        transition:all 0.3s ease;
-                        &:hover{
+                        transition: all 0.3s ease;
+
+                        &:hover {
                             background-color: $hover-dark-blue-color;
                             opacity: 2;
                         }
                     }
-                   
+
                 }
             }
         }
@@ -236,8 +237,9 @@
                     @include btn-post;
                     margin-bottom: 20px;
                     margin-top: 20px;
-                    transition:all 0.3s ease;
-                    &:hover{
+                    transition: all 0.3s ease;
+
+                    &:hover {
                         background-color: $hover-dark-blue-color;
                         opacity: 2;
                     }
@@ -290,6 +292,7 @@
             li {
                 padding: 0;
                 margin: 0;
+                transition: all 0.4s ease;
 
                 a {
                     text-decoration: none;
@@ -314,6 +317,7 @@
                         color: $heading-color;
                         font-weight: 400;
                         letter-spacing: 1.6px;
+                        transition: all .4s ease;
 
                     }
 
@@ -335,6 +339,10 @@
                         border-radius: 100PX;
 
                     }
+                }
+
+                &:hover strong {
+                    margin-left: 70px;
                 }
             }
         }
@@ -360,6 +368,13 @@
                 font-size: 14px;
                 font-weight: 400;
                 color: $paragraph-color;
+                cursor: pointer;
+                transition: all 0.4s ease-in-out;
+
+                &:hover {
+                    background-color: $base-color;
+                    color: $white-color;
+                }
             }
         }
 
@@ -428,6 +443,7 @@
             .zoom {
                 width: 100% !important;
                 height: 100% !important;
+
                 img {
                     width: 100% !important;
                     height: 100% !important;
@@ -440,18 +456,18 @@
                 margin-top: 20px !important;
                 margin-bottom: 20px !important;
                 // display: block;
-    
+
                 .small-image {
                     .small-zoom {
                         width: 100% !important;
                         height: 100% !important;
-    
+
                         img {
-    
+
                             object-fit: cover !important;
                             width: 100% !important;
-                            height: 250px !important ;
-    
+                            height: 250px !important;
+
                         }
                     }
                 }
@@ -459,6 +475,7 @@
         }
     }
 }
+
 // responsibility
 
 @media screen and(max-width:992px) {
@@ -472,6 +489,7 @@
             .zoom {
                 width: 100% !important;
                 height: 100% !important;
+
                 img {
                     width: 100% !important;
                     height: 100% !important;
@@ -494,6 +512,7 @@
             .zoom {
                 width: 100% !important;
                 height: 100% !important;
+
                 img {
                     width: 100% !important;
                     height: 100% !important;
@@ -506,18 +525,18 @@
                 margin-top: 20px !important;
                 margin-bottom: 20px !important;
                 // display: block;
-    
+
                 .small-image {
                     .small-zoom {
                         width: 100% !important;
                         height: 100% !important;
-    
+
                         img {
-    
+
                             object-fit: cover !important;
                             width: 100% !important;
-                            height: 100% !important ;
-    
+                            height: 100% !important;
+
                         }
                     }
                 }
@@ -537,6 +556,7 @@
             .zoom {
                 width: 100% !important;
                 height: 100% !important;
+
                 img {
                     width: 100% !important;
                     height: 100% !important;
@@ -549,18 +569,18 @@
                 margin-top: 20px !important;
                 margin-bottom: 20px !important;
                 // display: block;
-    
+
                 .small-image {
                     .small-zoom {
                         width: 100% !important;
                         height: 100% !important;
-    
+
                         img {
-    
+
                             object-fit: cover !important;
                             width: 100% !important;
-                            height: 200px !important ;
-    
+                            height: 200px !important;
+
                         }
                     }
                 }
