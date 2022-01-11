@@ -1,0 +1,175 @@
+#blog-form {
+    min-width: 100%;
+    padding-bottom: 80px;
+    background-color: $bg-color;
+
+    .container-blog-form {
+        width: 1140px;
+
+        .comment-box {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 100%;
+            background-color: $white-color;
+            box-shadow: 0 2px 48px 0 rgb(227, 227, 227 / 1%);
+            padding: 30px 30px 0px;
+            margin: 0 0 30px;
+            border-radius: 5px;
+
+            .title {
+                h2 {
+                    color: $heading-color;
+                    font-size: 26px;
+                    font-weight: 400;
+                    letter-spacing: 1px;
+                    padding: 0px 15px;
+                }
+            }
+
+            //    form start
+            #form {
+                margin: 0px;
+                padding: 0px;
+
+                // for form control js
+                .border{
+                    outline: 1px solid red;
+                }
+                .head {
+                    display: flex;
+                    justify-content: space-between;
+
+                    .username {
+                        display: flex;
+                        flex-direction: column;
+                        width: 100%;
+                        // margin: 10px;
+                        padding: 0px 15px;
+                        font-size: 14px;
+                        font-weight: 400;
+                        color: $heading-color;
+                        
+
+                        input.control {
+                            width: 100%;
+                            height: 45px;
+                            outline: $base-color;
+                            transition:all 0.3s ease;
+                            padding: 10px;
+                            font-size: 16px;
+                            font-weight: 400;
+                            color: $heading-color;
+                        }
+                    }
+
+                    .email {
+                        display: flex;
+                        flex-direction: column;
+                        width: 100%;
+                        // margin: 10px;
+                        padding: 0px 15px;
+                        font-size: 14px;
+                            font-weight: 400;
+                            color: $heading-color;
+                        input {
+                            width: 100%;
+                            height: 45px;
+                            padding: 10px;
+                            font-size: 16px;
+                            font-weight: 400;
+                            color: $heading-color;
+                            outline: $base-color;
+                            transition:all 0.3s ease;
+                        }
+                    }
+                }
+
+                .comment {
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+                    padding: 0px 15px;
+                    // height: 100%;
+                    font-size: 14px;
+                    font-weight: 400;
+                    color: $heading-color;
+
+                    textarea {
+                        margin: 0px;
+                        width: 100%;
+                        height: 200px;
+                        padding: 10px;
+                        font-size: 24px;
+                            font-weight: 400;
+                            color: $heading-color;
+                            outline: $base-color;
+                            transition:all 0.3s ease;
+                       
+                    }
+                }
+
+                .button {
+                    padding: 0px 15px;
+                    margin-top: 20px;
+
+                    button#blog-submit {
+                        background-color: $base-color;
+                        outline: none;
+                        border: none;
+                        color: $white-color;
+                        padding: 10px 25px;
+                        border-radius: 5px;
+                        font-weight: 400;
+                        font-size: 12px;
+                        text-align: center;
+                        letter-spacing: 1.2px;
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+@media screen and(max-width:1282px) {
+    #blog-form {
+        min-width: 100% !important;
+        padding-bottom: 80px !important;
+    
+        .container-blog-form {
+            width: 100% !important;
+        }
+    }    
+}
+@media screen and(max-width:992px) {
+    #blog-form {
+        min-width: 100% !important;
+        padding-bottom: 80px !important;
+    
+        .container-blog-form {
+            width: 100% !important;
+        }
+    }    
+}
+@media screen and(max-width:767px) {
+    #blog-form {
+        min-width: 100% !important;
+        padding-bottom: 80px !important;
+    
+        .container-blog-form {
+            width: 100% !important;
+        }
+    }    
+}
+
+@media screen and(max-width:576px) {
+    #blog-form {
+        min-width: 100% !important;
+        padding: 20px !important;
+    
+        .container-blog-form {
+            width: 100% !important;
+        }
+    }    
+}
