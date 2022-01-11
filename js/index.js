@@ -15,7 +15,12 @@ const firstSectionY = intro.getBoundingClientRect();
 window.addEventListener('scroll',(e)=>{
     // console.log(window.scrollY);
     // console.log(firstSectionY.top);
-    navbar.classList.toggle("sticky",window.scrollY>intro.clientTop);
+    if (window.scrollY>intro.scrollY) {
+        navbar.classList.add("sticky");    
+    }
+    else{
+        navbar.classList.remove("sticky");
+    }
 
 })
 

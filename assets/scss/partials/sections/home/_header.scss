@@ -1,20 +1,23 @@
 #navbar {
     width: 100%;
-    height: 100px;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     z-index: 1000;
+    background-color: $white-color;
     // trastion for stick slowly back
     transition: all 0.3s ease;
+    height: 80px;
 
     &.sticky {
-        
-        background: $white-color;
-        height: 80px;
+        background-color: $white-color;
+        height: 70px;
         box-shadow: 0 2px 28px 0 rgba(227, 227, 227, 1);
     }
+    // &.sticky-height{
+    //     height: 100px;
+    // }
 
     .navbar-container {
         width: 1140px;

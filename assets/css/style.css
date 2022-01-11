@@ -31,19 +31,20 @@ html {
 
 #navbar {
   width: 100%;
-  height: 100px;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: 1000;
+  background-color: white;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
+  height: 80px;
 }
 
 #navbar.sticky {
-  background: white;
-  height: 80px;
+  background-color: white;
+  height: 70px;
   -webkit-box-shadow: 0 2px 28px 0 #e3e3e3;
           box-shadow: 0 2px 28px 0 #e3e3e3;
 }
