@@ -1,3 +1,4 @@
+// Header section start
 // Navbar dropdown click
 const menuIcon = document.querySelector(".menu-icon");
 const navLinks = document.querySelector(".nav-links");
@@ -5,7 +6,19 @@ const navLinks = document.querySelector(".nav-links");
 menuIcon.addEventListener("click", () => {
     navLinks.classList.toggle('active');
 
+});
+// navbar sticky 
+const navbar = document.querySelector("#navbar");
+const intro = document.querySelector("#intro");
+const firstSectionY = intro.getBoundingClientRect();
+
+window.addEventListener('scroll',(e)=>{
+    // console.log(window.scrollY);
+    // console.log(firstSectionY.top);
+    navbar.classList.toggle("sticky",window.scrollY>intro.clientTop);
+
 })
+
 
 // Accordion FAQ section start
 
@@ -73,12 +86,12 @@ const addComment =(e)=>{
     }
 
     comments.push(comment);
-    console.log(comments);
+    // console.log(comments);
 
     // Localstorage saving
     localStorage.setItem("MyComments",JSON.stringify(comments));
 
-    // 
+    // add html
     if (comments.length > 0) {
         let result = comments.map(c=>{
            return `
@@ -110,8 +123,6 @@ const addComment =(e)=>{
      alert("comment")
     }
 }
-
-
 
 document.addEventListener("DOMContentLoaded",()=>{
     document.getElementById("blog-submit").addEventListener('click',addComment);
