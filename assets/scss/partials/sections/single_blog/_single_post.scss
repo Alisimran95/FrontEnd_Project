@@ -315,14 +315,15 @@
 
         // post-us
 
-        .post-us {
+        .post-us{
             border-radius: 5px;
+            overflow: hidden;
 
             .image {
                 width: 100%;
                 height: 100%;
                 position: relative;
-                z-index: -21;
+                z-index: 0;
 
                 img {
                     width: 100%;
@@ -396,7 +397,7 @@
                         width: 100% !important;
                         height: 100% !important;
                         position: relative;
-                        z-index: -21;
+                        z-index: 0;
         
                         img {
                             width: 100% !important;
@@ -447,7 +448,7 @@
                     width: 100% !important;
                     height: 100% !important;
                     position: relative !important;
-                    z-index: -21;
+                    z-index: 0 !important;
                     
     
                     img {
@@ -487,9 +488,6 @@
                     }
                 }
             }
-            .content{
-                margin: 10px !important  ;
-            }
         }
     }
 }
@@ -514,6 +512,27 @@
                         height: 400px !important;
                         object-fit: cover !important;
                     }
+                }
+            }
+            .search-items-list{
+                .post-us{
+                    .image {
+                        width: 100% !important;
+                        height: 100% !important;
+                        position: relative !important;
+                        z-index: 0 !important;
+        
+                        img {
+                            width: 100% !important;
+                            height: 250px !important;
+                            object-fit: cover !important;
+                        }
+        
+                        .content {
+                            width: 100% !important;
+                            height: 100% !important;
+                        }
+                    }        
                 }
             }
         }
