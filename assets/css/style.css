@@ -825,6 +825,10 @@ html {
   letter-spacing: 1px;
 }
 
+#features .container-features .about-body-row a {
+  text-decoration: none;
+}
+
 #features .container-features .about-body-row .features-card {
   padding: 30px;
   margin-top: 10px;

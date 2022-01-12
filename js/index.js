@@ -10,20 +10,20 @@ const dropdownMenu2 = document.querySelector("#dropdown-2");
 menuIcon.addEventListener("click", () => {
     navLinks.classList.toggle("active");
 });
-// accordionClick1.addEventListener("click",()=>{
-//     dropdownMenu.classList.toggle('accord-active');
-// })
-// accordionClick2.addEventListener('click',()=>{
-//     dropdownMenu2.classList.toggle('accord-active')
-// })
+accordionClick1.addEventListener("click",()=>{
+    dropdownMenu.classList.toggle('accord-active');
+})
+accordionClick2.addEventListener('click',()=>{
+    dropdownMenu2.classList.toggle('accord-active')
+})
 
 // navbar sticky 
 const navbar = document.querySelector("#navbar");
-const intro = document.querySelector("#intro");
+// const intro = document.querySelector("#intro");
 // const firstSectionY = intro.getBoundingClientRect();
 
 window.addEventListener('scroll',(e)=>{
-    if (window.scrollY>0) {
+    if (window.scrollY>navbar.scrollTop) {
         navbar.classList.add("sticky");    
     }
     else{
