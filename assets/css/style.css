@@ -1226,6 +1226,10 @@ html {
   padding: 10px;
 }
 
+#teams .item-col .social-icons li i {
+  color: #585CE9;
+}
+
 #teams .item-col p {
   margin-top: 70px;
   margin-bottom: 70px;
