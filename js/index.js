@@ -23,19 +23,7 @@ window.addEventListener('scroll',(e)=>{
     }
 
 });
-
-// Accordion FAQ section start
-
-// document.querySelectorAll(".accordion-question").forEach(a => {
-//     a.addEventListener("click", () => {
-//         if (a.classList.contains("accordion-question")) {
-//             a.nextElementSibling.classList.toggle("active");
-//         }   
-//     })
-// })
-
-// Accordion Faq 
-
+// Header ends
 
 // PARALLAX COUNTER 
 
@@ -137,3 +125,5 @@ window.addEventListener("load",()=>{
     document.querySelector("#preloader").classList.add("loader-hide");
 })
 
+
+AOS.init();

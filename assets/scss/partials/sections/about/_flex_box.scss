@@ -40,62 +40,106 @@
             }
         }
 
-            .flex-box-content {
-                position: absolute;
-                width: 40%;
-                float: left;
-                // right: 0px;
-                left: 0px;
-                top: 50%;
-                background-color: $white-color;
-                box-shadow: 0 2px 48px 0 rgb(227, 227, 227 / 1%);
-                z-index: 15;
-                border-radius: 5px;
-                padding: 35px;
-                transform: translateY(-50%);
-                // padding-bottom: 10px;
+        .flex-box-content {
+            position: absolute;
+            width: 40%;
+            float: left;
+            // right: 0px;
+            left: 0px;
+            top: 50%;
+            background-color: $white-color;
+            box-shadow: 0 2px 48px 0 rgb(227, 227, 227 / 1%);
+            z-index: 15;
+            border-radius: 5px;
+            padding: 35px;
+            transform: translateY(-50%);
+            // padding-bottom: 10px;
 
-                h2 {
-                    font-weight: 400;
-                    font-size: 26px;
-                    color: $heading-color;
-                    line-height: 40px;
-                }
-
-                p {
-                    font-weight: 400;
-                    font-size: 16px;
-                    color: $paragraph-color;
-                    line-height: 30px;
-                }
+            h2 {
+                font-weight: 400;
+                font-size: 26px;
+                color: $heading-color;
+                line-height: 40px;
             }
 
-         
+            p {
+                font-weight: 400;
+                font-size: 16px;
+                color: $paragraph-color;
+                line-height: 30px;
+            }
+        }
+
+
     }
 
 }
 
 
-@media screen and(max-width:992px) {
-    #flexbox {
-        width: 100% !important;
 
-        .container-flex-box {
+
+@media screen and (max-width:992px) {
+    #flexbox {
+        min-width: 100%;
+
+        .container-flexbox {
             width: 100% !important;
 
-            .flex-box-image{
-                width: 100% !important;
-                // height: 100% !important;
-                margin-bottom: 50px;
+            .flexbox {
+
+                .flex-box-image {
+                    width: 100% !important;
+                    height: 100% !important;
+
+                }
             }
+
             .flex-box-content {
                 width: 100% !important;
                 position: relative !important;
-                top:0% !important;
-                right: 0px !important;
-                transform: translateY(0%);
-                clear: both;
+                top: 0% !important;
+                left: 0px !important;
+                margin-top: 20px !important;
+                transform: translateY(0%) !important;
+
             }
+
+
         }
+
+    }
+}
+
+
+// Small deveice responsibilty
+@media screen and (max-width:576px) {
+    #flexbox {
+        min-width: 100%;
+
+        .container-flexbox {
+            width: 100% !important;
+
+            .flexbox {
+
+                .flex-box-image {
+                    width: 100% !important;
+                    height: 100% !important;
+
+                }
+            }
+
+            .flex-box-content {
+                width: 100% !important;
+                position: relative !important;
+                top: 0% !important;
+                left: 0px !important;
+                margin-top: 20px !important;
+                transform: translateY(0%) !important;
+
+            }
+
+
+        }
+
     }
 }

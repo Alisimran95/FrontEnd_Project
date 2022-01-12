@@ -2293,7 +2293,7 @@ footer .container-footer .copyright {
     position: relative !important;
     top: 0% !important;
     left: 0px !important;
-    margin-top: 20px  !important;
+    margin-top: 20px !important;
     -webkit-transform: translateY(0%);
             transform: translateY(0%);
   }
@@ -2312,6 +2312,7 @@ footer .container-footer .copyright {
   }
   #about-body .container-about-body .mission .mission-text {
     width: 100% !important;
+    float: left;
     position: relative !important;
     top: 0% !important;
     left: 0px !important;
@@ -2400,23 +2401,45 @@ footer .container-footer .copyright {
 
 @media screen and (max-width: 992px) {
   #flexbox {
+    min-width: 100%;
+  }
+  #flexbox .container-flexbox {
     width: 100% !important;
   }
-  #flexbox .container-flex-box {
+  #flexbox .container-flexbox .flexbox .flex-box-image {
     width: 100% !important;
+    height: 100% !important;
   }
-  #flexbox .container-flex-box .flex-box-image {
-    width: 100% !important;
-    margin-bottom: 50px;
-  }
-  #flexbox .container-flex-box .flex-box-content {
+  #flexbox .container-flexbox .flex-box-content {
     width: 100% !important;
     position: relative !important;
     top: 0% !important;
-    right: 0px !important;
-    -webkit-transform: translateY(0%);
-            transform: translateY(0%);
-    clear: both;
+    left: 0px !important;
+    margin-top: 20px !important;
+    -webkit-transform: translateY(0%) !important;
+            transform: translateY(0%) !important;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  #flexbox {
+    min-width: 100%;
+  }
+  #flexbox .container-flexbox {
+    width: 100% !important;
+  }
+  #flexbox .container-flexbox .flexbox .flex-box-image {
+    width: 100% !important;
+    height: 100% !important;
+  }
+  #flexbox .container-flexbox .flex-box-content {
+    width: 100% !important;
+    position: relative !important;
+    top: 0% !important;
+    left: 0px !important;
+    margin-top: 20px !important;
+    -webkit-transform: translateY(0%) !important;
+            transform: translateY(0%) !important;
   }
 }
 
