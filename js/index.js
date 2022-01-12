@@ -2,11 +2,20 @@
 // Navbar dropdown click
 const menuIcon = document.querySelector(".menu-icon");
 const navLinks = document.querySelector(".nav-links");
+const accordionClick1=document.querySelector(".accordion-click-1");
+const accordionClick2 =document.querySelector(".accordion-click-2")
+const dropdownMenu = document.querySelector("#dropdown-1");
+const dropdownMenu2 = document.querySelector("#dropdown-2");
 
 menuIcon.addEventListener("click", () => {
-    navLinks.classList.toggle('active');
-
+    navLinks.classList.toggle("active");
 });
+accordionClick1.addEventListener("click",()=>{
+    dropdownMenu.classList.toggle('accord-active');
+})
+accordionClick2.addEventListener('click',()=>{
+    dropdownMenu2.classList.toggle('accord-active')
+})
 
 // navbar sticky 
 const navbar = document.querySelector("#navbar");
