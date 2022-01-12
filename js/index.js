@@ -10,12 +10,12 @@ const dropdownMenu2 = document.querySelector("#dropdown-2");
 menuIcon.addEventListener("click", () => {
     navLinks.classList.toggle("active");
 });
-accordionClick1.addEventListener("click",()=>{
-    dropdownMenu.classList.toggle('accord-active');
-})
-accordionClick2.addEventListener('click',()=>{
-    dropdownMenu2.classList.toggle('accord-active')
-})
+// accordionClick1.addEventListener("click",()=>{
+//     dropdownMenu.classList.toggle('accord-active');
+// })
+// accordionClick2.addEventListener('click',()=>{
+//     dropdownMenu2.classList.toggle('accord-active')
+// })
 
 // navbar sticky 
 const navbar = document.querySelector("#navbar");
@@ -23,7 +23,7 @@ const intro = document.querySelector("#intro");
 // const firstSectionY = intro.getBoundingClientRect();
 
 window.addEventListener('scroll',(e)=>{
-    if (window.scrollY>intro.scrollTop) {
+    if (window.scrollY>0) {
         navbar.classList.add("sticky");    
     }
     else{
@@ -127,7 +127,3 @@ document.addEventListener("DOMContentLoaded",()=>{
 window.addEventListener("load",()=>{
     document.querySelector("#preloader").classList.add("loader-hide");
 });
-
-
-// Reveal with DATA AOS
-AOS.init();
