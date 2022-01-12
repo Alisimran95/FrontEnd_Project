@@ -22,8 +22,18 @@ window.addEventListener('scroll',(e)=>{
         navbar.classList.remove("sticky");
     }
 
+});
+
+// PRELOADER FOR PAGE
+window.addEventListener("load",()=>{
+    document.querySelector("#preloader").style.display="block";
+    document.querySelector("#preloader").style.visibility="visible";
 })
 
+setInterval(()=>{
+    document.querySelector("#preloader").style.visibility="hidden";
+    document.querySelector("#preloader").style.display="block";
+},2000)
 
 // Accordion FAQ section start
 
@@ -61,17 +71,8 @@ window.addEventListener('scroll',(e)=>{
 
 
 
-// Form comment javscript 
+// FORM COMMENT SECTION 
 
-// const form = document.getElementById("form");
-// const username = document.getElementById("username");
-// const email = document.getElementById("email");
-// const textarea = document.getElementById("textarea");
-
-// let comments = [];
-// form.addEventListener("submit",(e)=>{
-//     e.preventDefault();
-// })
 let comments =[];
 
 const addComment =(e)=>{
