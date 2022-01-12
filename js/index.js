@@ -7,21 +7,19 @@ menuIcon.addEventListener("click", () => {
     navLinks.classList.toggle('active');
 
 });
+
 // navbar sticky 
 const navbar = document.querySelector("#navbar");
 const intro = document.querySelector("#intro");
 // const firstSectionY = intro.getBoundingClientRect();
 
 window.addEventListener('scroll',(e)=>{
-    // console.log(window.scrollY);
-    // console.log(firstSectionY.top);
     if (window.scrollY>intro.scrollTop) {
         navbar.classList.add("sticky");    
     }
     else{
         navbar.classList.remove("sticky");
     }
-
 });
 // Header ends
 
@@ -36,11 +34,12 @@ counters.forEach(counter=>{
     const updateCounter = () =>{
         let target = +counter.getAttribute("data-count");
         let main = +counter.innerText;
+        let prCoordinant= document.querySelector("#parallax-counter");
 
         let increment = target/100;
         if (main < target) {
             counter.innerText = `${Math.ceil(main + increment)}`;
-            setTimeout(updateCounter,13);
+            setTimeout(updateCounter,10);
         }
         else{
             counter.innerText = target;
@@ -49,12 +48,10 @@ counters.forEach(counter=>{
     updateCounter();
 });
 };
-
 parallaxCounter();
 // PARALLAX COUNTER
 
 // FORM COMMENT SECTION 
-
 let comments =[];
 
 const addComment =(e)=>{
@@ -115,15 +112,13 @@ const addComment =(e)=>{
 document.addEventListener("DOMContentLoaded",()=>{
     document.getElementById("blog-submit").addEventListener('click',addComment);
 })
-
-
 // FORM COMMENT SECTION
-
 
 // PreLoader
 window.addEventListener("load",()=>{
     document.querySelector("#preloader").classList.add("loader-hide");
-})
+});
 
 
+// Reveal with DATA AOS
 AOS.init();
