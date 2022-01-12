@@ -38,10 +38,11 @@ html {
   bottom: 0;
   position: fixed;
   z-index: 9999;
-  display: none;
-  visibility: hidden;
-  -webkit-transition: all 0.5s ease-in;
-  transition: all 0.5s ease-in;
+}
+
+#preloader.loader-hide {
+  -webkit-animation: hiding 3s forwards;
+          animation: hiding 3s forwards;
 }
 
 #preloader #loader {
@@ -153,6 +154,22 @@ html {
   }
 }
 
+@-webkit-keyframes hiding {
+  100% {
+    opacity: 0;
+    visibility: hidden;
+    display: none;
+  }
+}
+
+@keyframes hiding {
+  100% {
+    opacity: 0;
+    visibility: hidden;
+    display: none;
+  }
+}
+
 #navbar {
   width: 100%;
   position: fixed;
@@ -168,7 +185,7 @@ html {
 
 #navbar.sticky {
   background-color: white;
-  height: 70px;
+  height: 75px;
   -webkit-box-shadow: 0 2px 28px 0 #e3e3e3;
           box-shadow: 0 2px 28px 0 #e3e3e3;
 }
@@ -205,6 +222,7 @@ html {
   position: relative;
   z-index: 100;
   padding: 0px 30px 0px 20px;
+  cursor: pointer;
 }
 
 #navbar .navbar-container .navigation .nav-links li a {

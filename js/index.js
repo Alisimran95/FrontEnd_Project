@@ -10,12 +10,12 @@ menuIcon.addEventListener("click", () => {
 // navbar sticky 
 const navbar = document.querySelector("#navbar");
 const intro = document.querySelector("#intro");
-const firstSectionY = intro.getBoundingClientRect();
+// const firstSectionY = intro.getBoundingClientRect();
 
 window.addEventListener('scroll',(e)=>{
     // console.log(window.scrollY);
     // console.log(firstSectionY.top);
-    if (window.scrollY>intro.scrollY) {
+    if (window.scrollY>intro.scrollTop) {
         navbar.classList.add("sticky");    
     }
     else{
@@ -23,17 +23,6 @@ window.addEventListener('scroll',(e)=>{
     }
 
 });
-
-// PRELOADER FOR PAGE
-window.addEventListener("load",()=>{
-    document.querySelector("#preloader").style.display="block";
-    document.querySelector("#preloader").style.visibility="visible";
-})
-
-setInterval(()=>{
-    document.querySelector("#preloader").style.visibility="hidden";
-    document.querySelector("#preloader").style.display="block";
-},2000)
 
 // Accordion FAQ section start
 
@@ -45,31 +34,36 @@ setInterval(()=>{
 //     })
 // })
 
-// Accordion Faq section ends
-
-// Parallax counter 
-// const counters  = document.querySelectorAll(".counter");
-// const countSpeed = 1;
-
-// counters.forEach(c=>{
-//     const boostCount = ()=>{
-//         const dataCount = +c.getAttribute("data-count");
-//         const count =  + c.innerText;
-
-//         const increment = dataCount / countSpeed;
-
-//         if (count<dataCount) {
-//             c.innerText = count + increment;
-//             setTimeout(boostCount,10000);
-//         }
-//         else{
-//             c.innerText = dataCount;
-//         }
-//     }
-//     boostCount();
-// })
+// Accordion Faq 
 
 
+// PARALLAX COUNTER 
+
+function parallaxCounter(){
+    const counters = document.querySelectorAll(".counter");
+
+counters.forEach(counter=>{
+    counter.innerText = "0";
+
+    const updateCounter = () =>{
+        let target = +counter.getAttribute("data-count");
+        let main = +counter.innerText;
+
+        let increment = target/100;
+        if (main < target) {
+            counter.innerText = `${Math.ceil(main + increment)}`;
+            setTimeout(updateCounter,13);
+        }
+        else{
+            counter.innerText = target;
+        }
+    }
+    updateCounter();
+});
+};
+
+parallaxCounter();
+// PARALLAX COUNTER
 
 // FORM COMMENT SECTION 
 
@@ -132,5 +126,14 @@ const addComment =(e)=>{
 
 document.addEventListener("DOMContentLoaded",()=>{
     document.getElementById("blog-submit").addEventListener('click',addComment);
+})
+
+
+// FORM COMMENT SECTION
+
+
+// PreLoader
+window.addEventListener("load",()=>{
+    document.querySelector("#preloader").classList.add("loader-hide");
 })
 

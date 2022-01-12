@@ -7,9 +7,13 @@
     bottom: 0;
     position: fixed;
     z-index: 9999;
-    display: none;
-    visibility: hidden;
-    transition: all 0.5s ease-in;
+    // display: none;
+    // visibility: hidden;
+    // transition: all 0.5s ease-in;
+    
+    &.loader-hide{
+      animation: hiding 3s forwards;
+    }
 
     #loader {
         position: absolute;
@@ -75,3 +79,10 @@
     }
   }
   
+  @keyframes hiding {
+    100%{
+      opacity: 0;
+      visibility: hidden;
+      display: none;
+    }
+  }
