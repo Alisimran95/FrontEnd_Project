@@ -1,0 +1,168 @@
+#solution {
+    min-width: 100%;
+    padding: 100px 0px 70px 0px;
+
+
+    .solution-container {
+        width: 1140px;
+
+        .solution-content {
+
+            p {
+                font-weight: 400;
+                font-size: 16px;
+                letter-spacing: 1px;
+                line-height: 28px;
+                color: $paragraph-color;
+            }
+        }
+
+        .solution-sidebar {
+            // padding: 50px;
+            width: 100%;
+            height: 100%;
+
+            ul {
+                padding: 0px;
+                margin: 0px;
+                list-style: none;
+                overflow: hidden;
+                border-radius: 5px;
+                margin-bottom: 30px;
+                background: $white-color;
+                box-shadow: 0 2px 48px 0 rgb(227, 227, 227 / 1%);
+
+            }
+
+            li.active {
+                background-color: $base-color;
+
+                a {
+                    text-decoration: none;
+                    position: relative;
+                    display: block;
+                    color: $white-color;
+                    border-bottom: 1px solid $border-color;
+                    height: 45px;
+                    line-height: 45px;
+                    padding-left: 45px;
+                    font-weight: 400;
+                    font-size: 14px;
+                    letter-spacing: 1px;
+                }
+            }
+
+            li {
+
+                a {
+                    text-decoration: none;
+                    position: relative;
+                    display: block;
+                    color: $paragraph-color;
+                    border-bottom: 1px solid $border-color;
+                    height: 45px;
+                    line-height: 45px;
+                    padding-left: 45px;
+                    font-weight: 400;
+                    font-size: 14px;
+                    letter-spacing: 1px;
+
+                    span {
+                        transition: all 0.4s ease;
+                    }
+
+                    i {
+                        margin-right: 20px;
+                    }
+                }
+
+                &:hover span {
+                    padding-left: 10px;
+                }
+            }
+
+            .contact-sidebar {
+                border-radius: 5px;
+
+                .image {
+                    width: 100%;
+                    height: 100%;
+                    position: relative;
+                    z-index: -21;
+
+                    img {
+                        width: 100%;
+                        height: 250px;
+                        object-fit: cover;
+                    }
+
+                    .content {
+                        position: absolute;
+                        background-image: linear-gradient(135deg, #585CE9 0%, #5C83E3 100%);
+                        top: 0;
+                        width: 100%;
+                        height: 100%;
+                        opacity: 0.8;
+                        z-index: 1001;
+                        text-align: center;
+                        padding: 30px;
+
+                        p {
+                            color: #fff;
+                            font-weight: 700;
+                            font-size: 18px;
+                            line-height: 30px;
+                            letter-spacing: 1px;
+                            margin-bottom: 30px;
+                        }
+
+                        a.post-us-btn {
+                            @include btn-post;
+                            background-color: $white-color;
+                            color: $base-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+// Responosibilty 
+
+@media screen and(max-width:576px) {
+    #solution {
+        min-width: 100% !important;
+        padding: 100px 0px 70px 0px;
+
+
+        .solution-container {
+            width: 100% !important;
+
+            .contact-sidebar {
+                border-radius: 5px;
+
+                .image {
+                    width: 100% !important;
+                    height: 100% !important;
+                    position: relative !important;
+                    z-index: -21;
+
+                    img {
+                        width: 100% !important;
+                        height: 250px !important;
+                        object-fit: cover !important;
+                    }
+
+                    .content {
+                        position: absolute;
+                        background-image: linear-gradient(135deg, #585CE9 0%, #5C83E3 100%);
+                        top: 0;
+
+                    }
+                }
+            }
+        }
+    }
+}
